@@ -2,7 +2,7 @@ export default function Banner() {
   return (
     <div>
       <div className="w-full items-center justify-between relative text-sm lg:flex">
-        <video src="/banner.mp4" autoPlay loop className="w-full h-[auto]" />
+        <video src="/banner.mp4" autoPlay loop muted className="w-full h-[auto]" />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-center">
           <p className="text-white text-[3.438rem] font-bold w-[45rem] leading-[3.438rem] text-center mb-[1.25rem]">
             Transforme sua empresa com a gente!
