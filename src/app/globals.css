@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
@@ -15,7 +15,17 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+.underline span {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 
+.hover\\:bg-white:hover span {
+  transform: scaleX(1);
+}
+.header-gradient {
+  background-image: linear-gradient(to bottom, black 60%, rgba(0,0,0,0.5) 80%, rgba(0,0,0,0));
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
