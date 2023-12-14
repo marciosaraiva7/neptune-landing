@@ -2,7 +2,7 @@ export default function Banner() {
   return (
     <div>
       <div className="w-full items-center justify-between relative text-sm lg:flex">
-        <video src="/banner.mp4" autoPlay loop muted className="w-full h-[auto]" />
+        <video  src="videos/banner.mp4" autoPlay loop muted className="w-full h-[auto]" />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-center">
           <p className="text-white text-[3.438rem] font-bold w-[45rem] leading-[3.438rem] text-center mb-[1.25rem]">
             Transforme sua empresa com a gente!
@@ -19,7 +19,7 @@ export default function Banner() {
             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transform transition-transform ease-out duration-300"></span>
           </a>
           <span className="mb-[0.438rem]">Conheça nosso trabalho</span>
-          <img src="/arrow-down.svg" />
+          <img src="images/arrow-down.svg" />
         </div>
       </div>
     </div>

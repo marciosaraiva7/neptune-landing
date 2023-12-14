@@ -9,7 +9,7 @@ export default function Header() {
     <header className="header-gradient text-white py-4 fixed flex w-full top-0 left-0 h-28 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <img src="/logo.svg" alt="Neptune Lab logo" className="mr-4" />
+          <img src="images/logo.svg" alt="Neptune Lab logo" className="mr-4" />
         </div>
         <nav>
           {navItems.map((item) => (
