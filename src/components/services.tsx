@@ -2,15 +2,15 @@ export default function Services() {
   return (
     <div>
       <div className="h-[3.5rem] header-gradient rotate-180 mt-[-2rem]"></div>
-      <div className="bg-black">
+      <div className="bg-[#101010]">
         <div className="flex justify-center items-center mb-[5.375rem] pt-[2rem]">
-          <p className="text-[#86B3FF] text-[2.5rem] leading-[3rem]  w-[45rem] ">
+          <p className="text-[1.8rem] leading-[2.2rem] text-center md:text-left font-bold md:font-normal text-[#86B3FF] md:text-[2.5rem] md:leading-[3rem] w-[85%]  md:w-[45rem] ">
             Desperte o potencial digital do seu negócio com soluções sob medida
           </p>
         </div>
-        <div className="flex justify-center gap-[7.625rem] pb-[5.125rem]">
+        <div className="flex justify-center items-center md:items-start flex-col md:flex-row gap-[7.625rem] pb-[5.125rem]">
           <div className="max-w-[14.938rem] flex flex-col items-center ">
-            <img src="/images/sites.svg" className="mb-[1.813rem]"/>
+            <img src="/images/sites.svg" className="mb-[1.813rem]" />
             <p className="text-center text-[1.438rem] leading-[1.563rem] mb-[0.813rem]">
               Sites
             </p>
@@ -21,7 +21,7 @@ export default function Services() {
             <a className="underline">Saiba mais</a>
           </div>
           <div className="max-w-[14.938rem] flex flex-col items-center">
-            <img src="/images/aplicativos.svg" className="mb-[1.813rem]"/>
+            <img src="/images/aplicativos.svg" className="mb-[1.813rem]" />
             <p className="text-center text-[1.438rem] leading-[1.563rem] mb-[0.813rem]">
               Aplicativos
             </p>
@@ -32,7 +32,7 @@ export default function Services() {
             <a className="underline">Saiba mais</a>
           </div>
           <div className="max-w-[14.938rem] flex flex-col items-center">
-            <img src="/images/sistemas.svg" className="mb-[1.813rem]"/>
+            <img src="/images/sistemas.svg" className="mb-[1.813rem]" />
             <p className="text-center text-[1.438rem] leading-[1.563rem] mb-[0.813rem]">
               Sistemas
             </p>
