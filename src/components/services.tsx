@@ -2,7 +2,7 @@ export default function Services() {
   return (
     <div>
       <div className="h-[3.5rem] header-gradient rotate-180 mt-[-2rem]"></div>
-      <div className="bg-[#101010]">
+      <div className="bg-[#101010] md:bg-black">
         <div className="flex justify-center items-center mb-[5.375rem] pt-[2rem]">
           <p className="text-[1.8rem] leading-[2.2rem] text-center md:text-left font-bold md:font-normal text-[#86B3FF] md:text-[2.5rem] md:leading-[3rem] w-[85%]  md:w-[45rem] ">
             Desperte o potencial digital do seu negócio com soluções sob medida
