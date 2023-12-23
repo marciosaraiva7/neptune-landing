@@ -1,6 +1,7 @@
 import Approuch from "@/components/approach";
 import Banner from "@/components/banner";
 import Services from "@/components/services";
+import Transformation from "@/components/transformation";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <Services />
       <Approuch />
+      <Transformation />
     </main>
   );
 }

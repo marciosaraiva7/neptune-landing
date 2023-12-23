@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="pt-[2.5rem] md:pt-0">
+    <div id="banner" className="pt-[2.5rem] md:pt-0 scroll-smooth">
       <div className=" w-full items-center justify-between relative text-sm md:flex">
         <video
           src="videos/banner.mp4"

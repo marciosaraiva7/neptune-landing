@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Header() {
   const navItems = [
     { name: "Serviços", href: "#services" },
@@ -9,11 +11,13 @@ export default function Header() {
     <header className="header-gradient text-white md:py-4 fixed flex w-full top-0 left-0 h-[7.563rem] md:h-28 z-50">
       <div className="container mx-auto flex justify-between items-start px-4 py-4 md:px-0 md:py-0 md:items-center">
         <div className="flex items-center">
-          <img
-            src="images/logo.svg"
-            alt="Neptune Lab logo"
-            className="w-[8.75rem] md:w-auto mr-4"
-          />
+          <Link href="#banner" className="scroll-smooth">
+            <img
+              src="images/logo.svg"
+              alt="Neptune Lab logo"
+              className="w-[8.75rem] md:w-auto mr-4"
+            />
+          </Link>
         </div>
         <nav className="hidden md:block">
           {navItems.map((item) => (
