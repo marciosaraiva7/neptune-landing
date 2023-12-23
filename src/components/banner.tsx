@@ -14,6 +14,7 @@ export default function Banner() {
           autoPlay
           loop
           muted
+          playsInline
           className="w-full h-[auto] md:hidden"
         />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-end md:justify-center">
