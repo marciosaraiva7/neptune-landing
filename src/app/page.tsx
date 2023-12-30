@@ -1,5 +1,6 @@
 import Approuch from "@/components/approach";
 import Banner from "@/components/banner";
+import Contact from "@/components/contact";
 import Services from "@/components/services";
 import Transformation from "@/components/transformation";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Services />
       <Approuch />
       <Transformation />
+      <Contact />
     </main>
   );
 }
