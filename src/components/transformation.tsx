@@ -18,6 +18,10 @@ export default function Transformation() {
           digitais e transformamos visões em realidade.
         </p>
       </div>
+      <div className="flex pt-[2rem]">
+        <img className="w-[12rem] z-10" src={"images/foto1.png"} />
+        <img className="w-[12rem] ml-[-2rem]" src={"images/foto2.png"} />
+      </div>
     </div>
   );
 }

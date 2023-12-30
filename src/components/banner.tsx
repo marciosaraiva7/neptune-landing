@@ -9,14 +9,15 @@ export default function Banner() {
           muted
           className="w-full h-[auto] hidden md:block"
         />
-        <video
+        {/* <video
           src="videos/neptune-9-16.mp4"
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-[auto] md:hidden"
-        />
+        /> */}
+        <img src="images/star.jpg" className="w-full h-[auto] md:hidden" />
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-end md:justify-center">
           <p className="mb-16 text-white text-[3.2rem] leading-[2.738rem]  md:text-[3.438rem] font-bold md:w-[50rem] md:leading-[3.438rem] text-center md:mb-[1.25rem]">
             Transforme sua empresa com a gente!
