@@ -8,17 +8,18 @@ export default function Banner() {
           loop
           muted
           className="w-full h-[auto] hidden md:block"
+          preload="true"
         />
-        {/* <video
+        <video
           src="videos/neptune-9-16.mp4"
           autoPlay
           loop
           muted
           playsInline
           className="w-full h-[auto] md:hidden"
-        /> */}
-        <img src="images/star.jpg" className="w-full h-[auto] md:hidden" />
-        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-end md:justify-center">
+        />
+        {/* <img src="images/star.jpg" className="w-full h-[auto] md:hidden" /> */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-center md:justify-center">
           <p className="mb-16 text-white text-[3.2rem] leading-[2.738rem]  md:text-[3.438rem] font-bold md:w-[50rem] md:leading-[3.438rem] text-center md:mb-[1.25rem]">
             Transforme sua empresa com a gente!
           </p>
@@ -28,7 +29,7 @@ export default function Banner() {
           </p>
           <a
             href="#contact"
-            className="w-[14.25rem] h-[2.625rem] bg-[#FF465D] bg-no-repeat rounded-[1.3125rem] flex justify-center items-center relative text-white transition-all hover:bg-red-900 text-[1.25rem] leading-[1.625rem] mb-[7rem]"
+            className="w-[14.25rem] h-[2.625rem] bg-[#FF465D] bg-no-repeat rounded-[1.3125rem] flex justify-center items-center relative text-white transition-all hover:bg-red-900 text-[1.25rem] leading-[1.625rem] mb-[8rem]"
           >
             Orçamento Grátis
             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transform transition-transform ease-out duration-300"></span>
