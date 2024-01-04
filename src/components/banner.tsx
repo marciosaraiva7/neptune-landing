@@ -1,13 +1,31 @@
+import { useEffect, useState } from 'react';
 export default function Banner() {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+  useEffect(() => {
+    const videoElement = document.getElementById('banner-video');
+
+    const handleVideoLoaded = () => {
+      setVideoLoaded(true);
+    };
+
+    videoElement.addEventListener('loadedmetadata', handleVideoLoaded);
+
+    return () => {
+      videoElement.removeEventListener('loadedmetadata', handleVideoLoaded);
+    };
+  }, []);
   return (
     <div id="banner" className="pt-[2.5rem] md:pt-0 scroll-smooth">
-      <div className=" w-full items-center justify-between relative text-sm md:flex">
+      <div className={`w-full h-screen fixed top-0 left-0 ${videoLoaded ? 'opacity-100' : 'opacity-0 transition-opacity duration-1000'}`}>
         <video
+          id="banner-video"
           src="videos/banner.mp4"
           autoPlay
           loop
           muted
-          className="w-full h-[auto] hidden md:block"
+
+          className="w-full h-[auto] hidden md:block object-cover"
           preload="true"
         />
         <video
