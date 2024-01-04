@@ -16,6 +16,8 @@ export default function Banner() {
           loop
           muted
           playsInline
+          preload="true"
+
           className="w-full h-[auto] md:hidden"
         />
         {/* <img src="images/star.jpg" className="w-full h-[auto] md:hidden" /> */}
