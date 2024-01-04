@@ -29,6 +29,8 @@ export default function Banner() {
           preload="true"
         />
         <video
+          id="banner-video"
+
           src="videos/neptune-9-16.mp4"
           autoPlay
           loop
