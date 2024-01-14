@@ -7,18 +7,20 @@ import { Button } from "../ui/button";
 
 export function MenuMobile() {
   const [isOpen, setIsOpen] = useState(false);
-  const menuRef = useRef(null);
+  // Tipando menuRef como HTMLDivElement
+  const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    function handleClickOutside(event: { target: any }) {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+    function handleClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsOpen(false);
       }
     }
 
-    window.addEventListener("click", handleClickOutside);
+    // Usar 'mousedown' em vez de 'click' pode oferecer uma resposta mais rápida
+    window.addEventListener("mousedown", handleClickOutside);
     return () => {
-      window.removeEventListener("click", handleClickOutside);
+      window.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
