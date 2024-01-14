@@ -1,4 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Menu } from "./menu";
+import { MenuMobile } from "./menumobile";
 
 export default function Header() {
   const navItems = [
@@ -19,6 +23,9 @@ export default function Header() {
             />
           </Link>
         </div>
+        <div className="md:hidden">
+          <MenuMobile />
+        </div>
         <nav className="hidden md:block">
           {navItems.map((item) => (
             <a
@@ -30,13 +37,9 @@ export default function Header() {
               <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white scale-x-0 group-hover:scale-x-90 transform transition-transform ease-out duration-300"></span>
             </a>
           ))}
-          <a
-            href="#contact"
-            className="relative text-white bg-[#FF465D] px-4 py-2 transition-all rounded hover:bg-red-900 ml-4"
-          >
+          <Button className="relative text-white bg-[#FF465D] transition-all rounded hover:text-white hover:bg-red-900 ease-in-out duration-300 ml-4">
             Entre em contato
-            <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white scale-x-0 group-hover:scale-x-100 transform transition-transform ease-out duration-300"></span>
-          </a>
+          </Button>
         </nav>
       </div>
     </header>

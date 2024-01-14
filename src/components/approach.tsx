@@ -11,7 +11,7 @@ export default function Approuch() {
           <p className="text-[#FF465D] text-center md:text-[2.188rem] md:leading-[2.625rem] text-[1.6rem] leading-[2.2rem] md:text-left font-bold md:font-normal w-[90%]">
             Desenvolvimento Sob Medida
           </p>
-          <p className="w-[80%] text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
+          <p className="text-white w-[80%] text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
             Cada negócio é único, e acreditamos que seus sites devem refletir
             essa singularidade. Nosso processo de desenvolvimento sob medida
             garante que cada aspecto do seu site seja adaptado às necessidades
@@ -22,7 +22,7 @@ export default function Approuch() {
           <p className="text-[#FF465D] text-center md:text-[2.188rem] md:leading-[2.625rem] text-[1.6rem] leading-[2.2rem] md:text-left font-bold md:font-normal w-[90%]">
             Pensamento Estratégico
           </p>
-          <p className="w-[80%] text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
+          <p className="text-white w-[80%] text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
             Nossa consultoria estratégica orienta cada fase do desenvolvimento,
             desde a concepção até a implementação, garantindo que seu site não
             seja apenas bonito, mas também uma ferramenta eficaz para atingir
@@ -33,7 +33,7 @@ export default function Approuch() {
           <p className="text-[#FF465D] text-center md:text-[2.188rem] md:leading-[2.625rem] text-[1.6rem] leading-[2.2rem] md:text-left font-bold md:font-normal w-[90%]">
             Design Intuitivo
           </p>
-          <p className="w-[80%] text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
+          <p className="text-white w-[80%] text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
             Não é apenas sobre como o site parece, mas como ele funciona.
             Focamos em criar designs intuitivos que oferecem uma experiência de
             usuário excepcional, garantindo que seus visitantes se envolvam.

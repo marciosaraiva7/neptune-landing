@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
 export default function Services() {
   return (
     <div>
@@ -11,36 +13,36 @@ export default function Services() {
         <div className="flex justify-center items-center md:items-start flex-col md:flex-row gap-[7.625rem] pb-[5.125rem]">
           <div className="max-w-[14.938rem] flex flex-col items-center ">
             <img src="/images/sites.svg" className="mb-[1.813rem]" />
-            <p className="text-center font-bold md:font-normal text-[1.5rem] leading-[1.625rem] md:text-[1.438rem] md:leading-[1.563rem] mb-[0.813rem]">
+            <p className="text-white text-center font-bold md:font-normal text-[1.5rem] leading-[1.625rem] md:text-[1.438rem] md:leading-[1.563rem] mb-[0.813rem]">
               Sites
             </p>
-            <p className="text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
+            <p className="text-white text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
               Um site é a vitrine virtual da sua marca, aberta 24 horas por dia,
               7 dias por semana.
             </p>
-            <a className="underline">Saiba mais</a>
+            <a className="text-white underline">Saiba mais</a>
           </div>
           <div className="max-w-[14.938rem] flex flex-col items-center">
             <img src="/images/aplicativos.svg" className="mb-[1.813rem]" />
-            <p className="text-center font-bold md:font-normal text-[1.5rem] leading-[1.625rem] md:text-[1.438rem] md:leading-[1.563rem] mb-[0.813rem]">
+            <p className="text-white text-center font-bold md:font-normal text-[1.5rem] leading-[1.625rem] md:text-[1.438rem] md:leading-[1.563rem] mb-[0.813rem]">
               Aplicativos
             </p>
-            <p className="text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
+            <p className="text-white text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
               Um aplicativo coloca serviços e informações essenciais
               literalmente na ponta dos dedos do usuário
             </p>
-            <a className="underline">Saiba mais</a>
+            <a className="text-white underline">Saiba mais</a>
           </div>
           <div className="max-w-[14.938rem] flex flex-col items-center">
             <img src="/images/sistemas.svg" className="mb-[1.813rem]" />
-            <p className="text-center font-bold md:font-normal text-[1.5rem] leading-[1.625rem] md:text-[1.438rem] md:leading-[1.563rem] mb-[0.813rem]">
+            <p className="text-white text-center font-bold md:font-normal text-[1.5rem] leading-[1.625rem] md:text-[1.438rem] md:leading-[1.563rem] mb-[0.813rem]">
               Sistemas
             </p>
-            <p className="text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
+            <p className="text-white text-center text-[0.938rem] leading-[1.188rem] md:text-[1.125rem] md:leading-[1.375rem] md:h-[5.5rem] mb-[1.313rem] md:mb-[0.75rem]">
               Um sistema é a espinha dorsal que sustenta a eficiência e o
               crescimento em qualquer organização.
             </p>
-            <a className="underline">Saiba mais</a>
+            <a className="text-white underline">Saiba mais</a>
           </div>
         </div>
       </div>
