@@ -31,7 +31,7 @@ export default async function handler(
           transporter.sendMail({
             from: process.env.EMAIL_USER, // E-mail de origem
             to: email, // E-mail de destino
-            subject: "Novo Formulário Recebido", // Assunto
+            subject: "Neptune Lab - Novo Formulário Recebido", // Assunto
             text: JSON.stringify(body, null, 2), // Corpo do e-mail
           })
         )
