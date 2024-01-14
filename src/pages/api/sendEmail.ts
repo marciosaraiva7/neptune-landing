@@ -16,26 +16,21 @@ export default async function handler(
       },
     });
 
-    // Lista de e-mails para enviar (pode ser múltiplos)
-    const emailsString = process.env.EMAIL_TO;
+    // E-mail para enviar
+    const emailTo = process.env.EMAIL_TO;
 
-    if (typeof emailsString === "undefined") {
+    if (typeof emailTo === "undefined") {
       throw new Error("EMAIL_TO não está definido");
     }
 
-    const emails = emailsString.split(",");
-
     try {
-      await Promise.all(
-        emails.map((email: any) =>
-          transporter.sendMail({
-            from: process.env.EMAIL_USER, // E-mail de origem
-            to: email, // E-mail de destino
-            subject: "Neptune Lab - Novo Formulário Recebido", // Assunto
-            text: JSON.stringify(body, null, 2), // Corpo do e-mail
-          })
-        )
-      );
+      await transporter.sendMail({
+        from: process.env.EMAIL_USER, // E-mail de origem
+        to: emailTo, // E-mail de destino
+        subject: "Neptune Lab - Novo Formulário Recebido", // Assunto
+        text: JSON.stringify(body, null, 2), // Corpo do e-mail
+      });
+
       res.status(200).json({ message: "E-mail enviado com sucesso!" });
     } catch (error) {
       res.status(500).json({ message: "Erro ao enviar e-mail" });
