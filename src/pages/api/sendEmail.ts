@@ -9,7 +9,8 @@ export default async function handler(
   if (req.method === "POST") {
     // Configure o Nodemailer com suas credenciais
     const transporter = nodemailer.createTransport({
-      service: "gmail", // Ex: 'gmail'
+      host: "smtp.umbler.com",
+      port: 587, // Ex: 'gmail'
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
