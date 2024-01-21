@@ -23,6 +23,8 @@ const config: Config = {
         neonBlue: "#00bfff", // Cor azul neon personalizada
       },
       backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, #1D4D9D 70%, #08205E 100%)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

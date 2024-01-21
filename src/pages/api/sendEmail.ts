@@ -8,9 +8,12 @@ export default async function handler(
   const { body } = req;
   if (req.method === "POST") {
     // Configure o Nodemailer com suas credenciais
+
     const transporter = nodemailer.createTransport({
-      host: "smtp.umbler.com",
-      port: 587, // Ex: 'gmail'
+      host: "smtp.gmail.com",
+      port: 465,
+      service: "gmail",
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
@@ -19,11 +22,16 @@ export default async function handler(
 
     // E-mail para enviar
     const emailTo = process.env.EMAIL_TO;
-
     if (typeof emailTo === "undefined") {
       throw new Error("EMAIL_TO não está definido");
     }
-
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+      } else {
+        console.log("Server is ready to take our messages");
+      }
+    });
     try {
       await transporter.sendMail({
         from: process.env.EMAIL_USER, // E-mail de origem

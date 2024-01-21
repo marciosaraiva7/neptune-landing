@@ -39,7 +39,7 @@ export function MenuMobile() {
       {isOpen && (
         <div className="w-full top-0 left-0 absolute h-[70vh] bg-white z-[8] rounded-b-[40px]">
           <div className="w-full flex justify-between p-[20px]">
-            <img />
+            <img src="images/logo-color.svg" />
             <button
               onClick={toggleMenu}
               className="rounded-full w-[2rem] h-[2rem] bg-[#FF465D] flex justify-center items-center"
