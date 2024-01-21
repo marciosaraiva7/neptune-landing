@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 
 export default function Banner() {
   return (
-    <div id="banner" className="pt-[2.5rem] md:pt-0 scroll-smooth">
-      <div className=" w-full items-center justify-between relative text-sm md:flex">
+    <div id="banner" className="scroll-smooth pt-[2.5rem] md:pt-0">
+      <div className=" relative w-full items-center justify-between text-sm md:flex">
         <video
           src={"videos/banner.mp4"}
           autoPlay
           loop
           muted
-          className="w-full h-[auto] hidden md:block object-cover"
+          className="hidden h-[auto] w-full object-cover md:block"
           preload="true"
         />
         <video
@@ -21,22 +21,21 @@ export default function Banner() {
           muted
           playsInline
           preload="true"
-          className="w-full h-[auto] md:hidden"
+          className="h-[auto] w-full md:hidden"
         />
-        {/* <img src="images/star.jpg" className="w-full h-[auto] md:hidden" /> */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col items-center justify-center md:justify-center">
-          <p className="mb-16 text-white text-[3.2rem] leading-[2.738rem]  md:text-[3.438rem] font-bold md:w-[50rem] md:leading-[3.438rem] text-center md:mb-[1.25rem]">
+        <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-50 md:justify-center md:pt-[5rem]">
+          <p className="mb-16 text-center text-[3.2rem] font-bold  leading-[2.738rem] text-white md:mb-[1.25rem] md:w-[45rem] md:text-[3.438rem] md:leading-[3.438rem]">
             Transforme sua empresa com a gente!
           </p>
-          <p className="w-[70%] text-white text-center text-[1.3rem] leading-[1.5rem] md:text-[1.875rem] md:leading-[2.188rem] md:w-[33rem] mb-[4.375rem]">
+          <p className="mb-[4.375rem] w-[70%] text-center text-[1.3rem] leading-[1.5rem] text-white md:w-[36rem] md:text-[1.563rem] md:leading-[2.188rem]">
             Consultoria e desenvolvimento digital para sites e aplicativos sob
             medida para o seu negócio.
           </p>
-          <Button className="w-[14.25rem] h-[2.625rem] bg-[#FF465D] bg-no-repeat  flex justify-center items-center relative transition-all hover:bg-red-900 text-[1.25rem] leading-[1.625rem] mb-[8rem]">
+          <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-full bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] transition-all hover:bg-red-900">
             Orçamento Grátis
           </Button>
 
-          <span className=" text-white z-20 mb-[0.438rem]">
+          <span className=" z-20 mb-[0.438rem] text-white md:pt-[10rem]">
             Conheça nosso trabalho
           </span>
           <img className="z-20 md:mb-0" src="images/arrow-down.svg" />

@@ -12,14 +12,14 @@ export default function Header() {
   ];
 
   return (
-    <header className="header-gradient text-white md:py-4 fixed flex w-full top-0 left-0 h-[7.563rem] md:h-28 z-50">
-      <div className="container mx-auto flex justify-between items-start px-4 py-4 md:px-0 md:py-0 md:items-center">
+    <header className="header-gradient fixed left-0 top-0 z-50 flex h-[7.563rem] w-full text-white md:h-28 md:py-4">
+      <div className="container mx-auto flex items-start justify-between px-4 py-4 md:items-center md:px-0 md:py-0">
         <div className="flex items-center">
           <Link href="#banner" className="scroll-smooth">
             <img
               src="images/logo.svg"
               alt="Neptune Lab logo"
-              className="w-[8.75rem] md:w-auto mr-4"
+              className="mr-4 w-[8.75rem] md:w-auto"
             />
           </Link>
         </div>
@@ -31,13 +31,13 @@ export default function Header() {
             <a
               key={item.name}
               href={item.href}
-              className="group relative text-white px-4 inline-block"
+              className="group relative inline-block px-4 text-white"
             >
               {item.name}
-              <span className="absolute inset-x-0 bottom-0 h-0.5 bg-white scale-x-0 group-hover:scale-x-90 transform transition-transform ease-out duration-300"></span>
+              <span className="absolute inset-x-0 bottom-0 h-0.5 scale-x-0 transform bg-white transition-transform duration-300 ease-out group-hover:scale-x-90"></span>
             </a>
           ))}
-          <Button className="relative text-white bg-[#FF465D] transition-all rounded hover:text-white hover:bg-red-900 ease-in-out duration-300 ml-4">
+          <Button className="relative ml-4 rounded bg-[#FF465D] text-white transition-all duration-300 ease-in-out hover:bg-red-900 hover:text-white">
             Entre em contato
           </Button>
         </nav>
