@@ -2,6 +2,7 @@
 "use client";
 import { useState } from "react";
 import { FormEvent } from "react";
+import InputMask from "react-input-mask";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Contact() {
@@ -62,13 +63,20 @@ export default function Contact() {
                   onChange={(e) => setEmail(e.target.value)}
                   className="text-black placeholder:text-[#FF465D] focus-visible:outline-none md:text-[1.125rem]"
                 />
-                <input
+                <InputMask
+                  placeholder="Telefone"
+                  mask="99 9 9999-9999"
+                  value={tel}
+                  onChange={(e) => setTel(e.target.value)}
+                  className="text-black placeholder:text-[#FF465D] focus-visible:outline-none md:text-[1.125rem]"
+                />
+                {/* <input
                   placeholder="Telefone"
                   type="tel"
                   value={tel}
                   onChange={(e) => setTel(e.target.value)}
                   className="text-black placeholder:text-[#FF465D] focus-visible:outline-none md:text-[1.125rem]"
-                />
+                /> */}
                 <textarea
                   placeholder="Mensagem"
                   value={message}
