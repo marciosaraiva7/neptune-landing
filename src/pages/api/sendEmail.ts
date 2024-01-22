@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ) {
   const { body } = req;
   if (req.method === "POST") {
@@ -32,12 +32,14 @@ export default async function handler(
         console.log("Server is ready to take our messages");
       }
     });
+
     try {
       await transporter.sendMail({
         from: process.env.EMAIL_USER, // E-mail de origem
         to: emailTo, // E-mail de destino
-        subject: "Neptune Lab - Novo Formulário Recebido", // Assunto
-        text: JSON.stringify(body, null, 2), // Corpo do e-mail
+        subject: `Neptune Lab - Contato de ${body.nome}`, // Assunto
+        text: JSON.stringify(body), // Corpo do e-mail
+        html: `<p>Olá, voce recebeu um contato de <strong style="text-transform:uppercase;">${body.nome}</strong>, a mensagem é:<br /><b>${body.mensagem}</b><br /><p>telefone: <b>${body.telefone}</b></p><br /><p>email: <b>${body.email}</b></p></p>`,
       });
 
       res.status(200).json({ message: "E-mail enviado com sucesso!" });

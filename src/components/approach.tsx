@@ -11,9 +11,9 @@ export default function Approuch() {
           Transformamos ideias em experiências digitais memoráveis
         </p>
       </div>
-      <div className="flex flex-col items-center gap-[1.875rem] md:flex-row ">
+      <div className="flex flex-col items-center gap-[1.875rem]  md:flex-row ">
         <div
-          className="flex w-[90%] flex-col items-center gap-[0.8rem] rounded-[10px] pb-[2rem] pt-[0.5rem] md:max-w-[30rem]"
+          className="flex w-[90%] cursor-pointer flex-col items-center gap-[0.8rem] rounded-[10px] pb-[2rem] pt-[0.5rem] transition-all duration-300 hover:scale-105 active:scale-90 md:max-w-[30rem]"
           style={{
             backgroundImage: "linear-gradient(to right, #2b3354, #31486e)",
           }}
@@ -29,7 +29,7 @@ export default function Approuch() {
           </p>
         </div>
         <div
-          className="flex w-[90%] flex-col items-center gap-[0.8rem] rounded-[10px]  pb-[2rem] pt-[0.5rem] md:max-w-[30rem]"
+          className="flex w-[90%] cursor-pointer flex-col items-center gap-[0.8rem] rounded-[10px] pb-[2rem] pt-[0.5rem] transition-all duration-300 hover:scale-105 active:scale-90 md:max-w-[30rem]"
           style={{
             backgroundImage: "linear-gradient(to right, #2b3354, #31486e)",
           }}
@@ -45,7 +45,7 @@ export default function Approuch() {
           </p>
         </div>
         <div
-          className="mb-[2.625rem] flex w-[90%] flex-col items-center gap-[0.8rem] rounded-[10px]  pb-[2rem] pt-[0.5rem] md:hidden "
+          className="mb-[2.625rem] flex w-[90%] cursor-pointer flex-col items-center gap-[0.8rem] rounded-[10px] pb-[2rem] pt-[0.5rem] transition-all duration-300 hover:scale-105 active:scale-90 md:hidden"
           style={{
             backgroundImage: "linear-gradient(to right, #2b3354, #31486e)",
           }}
@@ -61,7 +61,7 @@ export default function Approuch() {
         </div>
       </div>
       <div
-        className="mb-[2.625rem] hidden w-[90%] flex-col items-center gap-[0.8rem] rounded-[10px] pb-[2rem] pt-[0.5rem] md:mt-[1.875rem] md:flex md:max-w-[30rem]"
+        className="mb-[2.625rem] hidden w-[90%] cursor-pointer flex-col items-center gap-[0.8rem] rounded-[10px] pb-[2rem] pt-[0.5rem] transition-all duration-300 hover:scale-105 active:scale-90 md:mt-[1.875rem] md:flex md:max-w-[30rem]"
         style={{
           backgroundImage: "linear-gradient(to right, #2b3354, #31486e)",
         }}
