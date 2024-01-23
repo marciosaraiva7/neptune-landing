@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { FormEvent } from "react";
 import InputMask from "react-input-mask";
+import { ButtonLoading } from "./ui/button-loading";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Contact() {
@@ -11,9 +12,10 @@ export default function Contact() {
   const [tel, setTel] = useState("");
   const [message, setMessage] = useState("");
   const [check, setCheck] = useState(false);
+  const [loading, setLoading] = useState(false);
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
+    setLoading(true);
     event.preventDefault();
-
     const body = {
       nome: name,
       email: email,
@@ -25,9 +27,9 @@ export default function Contact() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),
     });
-    console.log(body);
     // Handle response if necessary
     const data = await response.json();
+    setLoading(false);
     if (data.message === "E-mail enviado com sucesso!") {
       setCheck(true);
     }
@@ -85,12 +87,12 @@ export default function Contact() {
                 />
               </div>
               <div className="flex justify-center">
-                <button
-                  type="submit"
+                <ButtonLoading
+                  isLoading={loading}
                   className="relative flex h-[2.625rem] w-full items-center justify-center rounded-[1.3125rem] bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] text-white transition-all hover:bg-red-900"
                 >
-                  Enviar mensagem
-                </button>
+                  {!loading ? "Enviar mensagem" : "Enviando..."}
+                </ButtonLoading>
               </div>
             </form>
           )}
