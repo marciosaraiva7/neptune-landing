@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Banner() {
   return (
@@ -31,9 +32,11 @@ export default function Banner() {
             Consultoria e desenvolvimento digital para sites e aplicativos sob
             medida para o seu negócio.
           </p>
-          <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-full bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] transition-all hover:bg-red-900">
-            Orçamento Grátis
-          </Button>
+          <Link href={"#contact"}>
+            <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-full bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] transition-all hover:bg-red-900">
+              Orçamento Grátis
+            </Button>
+          </Link>
 
           <span className=" z-20 mb-[0.438rem] text-white md:pt-[10rem]">
             Conheça nosso trabalho

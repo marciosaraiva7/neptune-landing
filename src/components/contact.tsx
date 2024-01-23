@@ -37,7 +37,10 @@ export default function Contact() {
   }
   return (
     <>
-      <div className="w-full bg-[#101010] px-[0.5rem] md:px-[4.938rem]">
+      <div
+        id="contact"
+        className="w-full bg-[#101010] px-[0.5rem] md:px-[4.938rem]"
+      >
         <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-white p-[1rem]">
           {!check && (
             <p className="mb-[1rem] text-center text-[1.6rem] font-bold text-[#1D4D9D] md:text-[1.75rem]">
@@ -96,7 +99,9 @@ export default function Contact() {
               </div>
             </form>
           )}
-          {check && <img src="images/check.svg" />}
+          {check && (
+            <img src="images/check.png" className="h-[5rem] w-[5rem]" />
+          )}
         </div>
       </div>
       <div

@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 export default function Transformation() {
   return (
-    <div className=":flex-row bg-[#101010] md:flex">
+    <div id="about" className=":flex-row bg-[#101010] md:flex">
       <div className="flex flex-col items-center pt-[3.813rem]">
         <p className="mb-[2.2rem] w-[80%] text-left text-[1.6rem] font-bold leading-[2rem] text-[#64C6FF] md:text-[2.188rem]  md:leading-[2.625rem]">
           Somos mais que uma equipe, somos criadores apaixonados por uma missão

@@ -30,48 +30,50 @@ export function MenuMobile() {
 
   return (
     <div ref={menuRef}>
-      <button onClick={toggleMenu} className="pt-[10px] pr-[10px]">
+      <button onClick={toggleMenu} className="pr-[10px] pt-[10px]">
         <img
           src={isOpen ? "images/close.svg" : "images/hamburger.svg"}
           alt="Menu"
         />
       </button>
       {isOpen && (
-        <div className="w-full top-0 left-0 absolute h-[70vh] bg-white z-[8] rounded-b-[40px]">
-          <div className="w-full flex justify-between p-[20px]">
+        <div className="absolute left-0 top-0 z-[8] h-[70vh] w-full rounded-b-[40px] bg-white">
+          <div className="flex w-full justify-between p-[20px]">
             <img src="images/logo-color.svg" />
             <button
               onClick={toggleMenu}
-              className="rounded-full w-[2rem] h-[2rem] bg-[#FF465D] flex justify-center items-center"
+              className="flex h-[2rem] w-[2rem] items-center justify-center rounded-full bg-[#FF465D]"
             >
               <img src="images/close.svg" />
             </button>
           </div>
-          <div className="flex flex-col w-full h-full justify-center items-center">
+          <div className="flex h-full w-full flex-col items-center justify-center">
             <Link
               onClick={toggleMenu}
-              href={""}
-              className="text-[#1D4D9D] mb-[40px] text-[1.6rem]"
+              href={"#services"}
+              className="mb-[40px] text-[1.6rem] text-[#1D4D9D]"
             >
               Serviços
             </Link>
             <Link
               onClick={toggleMenu}
-              href={""}
-              className="text-[#1D4D9D] mb-[40px] text-[1.6rem]"
+              href={"#approach"}
+              className="mb-[40px] text-[1.6rem] text-[#1D4D9D]"
             >
               Abordagem
             </Link>
             <Link
               onClick={toggleMenu}
-              href={""}
-              className="text-[#1D4D9D] text-[1.6rem] mb-[142px]"
+              href={"#about"}
+              className="mb-[142px] text-[1.6rem] text-[#1D4D9D]"
             >
               Sobre nós
             </Link>
-            <Button className="rounded-3xl w-[14.25rem] h-[2.625rem] bg-[#FF465D] bg-no-repeat  flex justify-center items-center relative transition-all hover:bg-red-900 text-[1.25rem] leading-[1.625rem] mb-[8rem]">
-              Entre em contato
-            </Button>
+            <Link href={"#contact"}>
+              <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-3xl bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] transition-all hover:bg-red-900">
+                Entre em contato
+              </Button>
+            </Link>
           </div>
         </div>
       )}

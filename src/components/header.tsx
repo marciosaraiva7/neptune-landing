@@ -37,9 +37,11 @@ export default function Header() {
               <span className="absolute inset-x-0 bottom-0 h-0.5 scale-x-0 transform bg-white transition-transform duration-300 ease-out group-hover:scale-x-90"></span>
             </a>
           ))}
-          <Button className="relative ml-4 rounded bg-[#FF465D] text-white transition-all duration-300 ease-in-out hover:bg-red-900 hover:text-white">
-            Entre em contato
-          </Button>
+          <Link href={"#contact"}>
+            <Button className="relative ml-4 rounded bg-[#FF465D] text-white transition-all duration-300 ease-in-out hover:bg-red-900 hover:text-white">
+              Entre em contato
+            </Button>
+          </Link>
         </nav>
       </div>
     </header>
