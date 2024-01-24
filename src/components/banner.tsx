@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div id="banner" className="scroll-smooth pt-[2.5rem] md:pt-0">
+    <div id="banner" className="scroll-smooth pt-[2.5rem] md:mt-[-5rem]">
       <div className=" relative w-full items-center justify-between text-sm md:flex">
         <video
           src={"videos/banner.mp4"}
@@ -24,24 +24,24 @@ export default function Banner() {
           preload="true"
           className="h-[auto] w-full md:hidden"
         />
-        <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-50 md:justify-center md:pt-[5rem]">
+        <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-20 md:justify-end md:pt-[5rem]">
           <p className="mb-16 text-center text-[3.2rem] font-bold  leading-[2.738rem] text-white md:mb-[1.25rem] md:w-[45rem] md:text-[3.438rem] md:leading-[3.438rem]">
-            Transforme sua empresa com a gente!
+            Transforme seu negócio com aplicações digitais
           </p>
           <p className="mb-[4.375rem] w-[70%] text-center text-[1.3rem] leading-[1.5rem] text-white md:w-[36rem] md:text-[1.563rem] md:leading-[2.188rem]">
-            Consultoria e desenvolvimento digital para sites e aplicativos sob
-            medida para o seu negócio.
+            A transformação digital é uma realidade que está transformando a
+            maneira como as empresas operam.
           </p>
           <Link href={"#contact"}>
-            <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-full bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] transition-all hover:bg-red-900">
+            <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-full bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] transition-all hover:bg-red-900 md:mb-[5rem]">
               Orçamento Grátis
             </Button>
           </Link>
 
-          <span className=" z-20 mb-[0.438rem] text-white md:pt-[10rem]">
+          <span className=" z-20 mb-[0.438rem] text-white ">
             Conheça nosso trabalho
           </span>
-          <img className="z-20 md:mb-0" src="images/arrow-down.svg" />
+          <img className="z-20 md:mb-[5rem]" src="images/arrow-down.svg" />
         </div>
       </div>
     </div>

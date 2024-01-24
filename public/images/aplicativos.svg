@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="127" height="127" viewBox="0 0 127 127">
-  <g id="Group_10284" data-name="Group 10284" transform="translate(-504 -855)">
-    <circle id="Ellipse_18" data-name="Ellipse 18" cx="63.5" cy="63.5" r="63.5" transform="translate(504 855)" fill="#ff465d"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="83.905" height="74.949" viewBox="0 0 83.905 74.949">
+  <g id="Group_10284" data-name="Group 10284" transform="translate(-525.83 -880.805)">
     <g id="Group_10270" data-name="Group 10270" transform="translate(525.83 880.805)">
       <path id="uuid-fb20b2b5-bc5b-4117-a1ee-c5d1a8aa62bd" d="M170.551,47.427c.34-.859,1.073-1.369,1.637-1.139s.746,1.114.406,1.973a2.221,2.221,0,0,1-.626.894l-1.489,3.62L168.74,52l1.652-3.487a2.255,2.255,0,0,1,.158-1.086h0Z" transform="translate(-147.877 -40.517)" fill="#a0616a"/>
       <path id="Path_3985" data-name="Path 3985" d="M116.412,90.736s-2.5-1.209-2.323-2.077S121.7,69.28,121.7,69.28l3.443,2.263-8.73,19.2Z" transform="translate(-99.976 -60.714)" fill="#e6e6e6"/>
       <path id="Path_3986" data-name="Path 3986" d="M221.876,74.949H198a6.305,6.305,0,0,1-6.3-6.3V6.3A6.305,6.305,0,0,1,198,0h23.877a6.305,6.305,0,0,1,6.3,6.3V68.651A6.305,6.305,0,0,1,221.876,74.949Z" transform="translate(-167.998)" fill="#08205e"/>
-      <path id="Path_3987" data-name="Path 3987" d="M233.364,84.462H209.452A4.668,4.668,0,0,1,204.79,79.8V17.462a4.668,4.668,0,0,1,4.662-4.662h23.912a4.668,4.668,0,0,1,4.662,4.662V79.8A4.668,4.668,0,0,1,233.364,84.462Z" transform="translate(-179.47 -11.217)" fill="#ff465d"/>
+      <path id="Path_3987" data-name="Path 3987" d="M233.364,84.462H209.452A4.668,4.668,0,0,1,204.79,79.8V17.462a4.668,4.668,0,0,1,4.662-4.662h23.912a4.668,4.668,0,0,1,4.662,4.662V79.8A4.668,4.668,0,0,1,233.364,84.462Z" transform="translate(-179.47 -11.217)" fill="#86b3ff"/>
       <path id="Path_3988" data-name="Path 3988" d="M307.15,23.417h-6.762a1.618,1.618,0,0,1,0-3.237h6.762a1.618,1.618,0,0,1,0,3.237Z" transform="translate(-261.83 -17.685)" fill="#d7d7d8"/>
       <rect id="Rectangle_6637" data-name="Rectangle 6637" width="26.307" height="3.703" rx="1.852" transform="translate(28.786 24.949)" fill="#1d4d9d"/>
       <rect id="Rectangle_6638" data-name="Rectangle 6638" width="8.124" height="0.645" rx="0.323" transform="translate(29.332 21.872)" fill="#1d4d9d"/>

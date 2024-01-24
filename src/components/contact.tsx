@@ -39,7 +39,10 @@ export default function Contact() {
     <>
       <div
         id="contact"
-        className="w-full bg-[#101010] px-[0.5rem] md:px-[4.938rem]"
+        className="w-full px-[0.5rem] md:px-[4.938rem]"
+        style={{
+          backgroundImage: "linear-gradient(to bottom, #6992E0, #08205E)",
+        }}
       >
         <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-white p-[1rem]">
           {!check && (
@@ -104,12 +107,7 @@ export default function Contact() {
           )}
         </div>
       </div>
-      <div
-        className="relative z-[5] mt-[-10rem] h-[278px] w-full "
-        style={{
-          backgroundImage: "linear-gradient(to left, #08205E, #1D4D9D)",
-        }}
-      >
+      <div className="relative z-[5] mt-[-10rem] h-[278px] w-full bg-[#08205E]">
         <div className="absolute bottom-[2rem] left-11">
           <img
             src="images/logo.svg"
