@@ -1,11 +1,19 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
+"use client";
 import { Button } from "@/components/ui/button";
+import React, { useState } from "react";
 import Link from "next/link";
 
 export default function Banner() {
+  const [isVideoLoaded, setVideoLoaded] = useState(false);
   return (
     <div id="banner" className="scroll-smooth pt-[2.5rem] md:mt-[-5rem]">
+      {!isVideoLoaded && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+          <p className="text-white">Carregando...</p>
+        </div>
+      )}
       <div className=" relative w-full items-center justify-between text-sm md:flex">
         <video
           src={"videos/banner.mp4"}
@@ -13,6 +21,7 @@ export default function Banner() {
           loop
           muted
           className="hidden h-[auto] w-full object-cover md:block"
+          onLoadedData={() => setVideoLoaded(true)}
           preload="true"
         />
         <video
@@ -23,6 +32,7 @@ export default function Banner() {
           playsInline
           preload="true"
           className="h-[auto] w-full md:hidden"
+          onLoadedData={() => setVideoLoaded(true)}
         />
         <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-20 md:justify-end md:pt-[5rem]">
           <p className="mb-16 text-center text-[3.2rem] font-bold  leading-[2.738rem] text-white md:mb-[1.25rem] md:w-[45rem] md:text-[3.438rem] md:leading-[3.438rem]">
