@@ -5,8 +5,11 @@ import { Button } from "./ui/button";
 /* eslint-disable @next/next/no-img-element */
 export default function Transformation() {
   return (
-    <div id="about" className="flex flex-col bg-[#6992E0] md:flex md:px-16">
-      <div className="flex flex-col md:flex-row">
+    <div
+      id="about"
+      className="flex flex-col items-center bg-[#6992E0] md:flex md:px-16"
+    >
+      <div className="flex flex-col justify-center md:max-w-[80rem] md:flex-row">
         <div className=" flex flex-col items-center pt-[3.813rem] md:mb-[5rem]">
           <p className="mb-[2.2rem] w-[80%] text-left text-[1.6rem] font-bold leading-[2rem] text-[#08205E] md:text-[2.188rem]  md:leading-[2.625rem]">
             Por que escolher a Neptune para desenvolver aplicações digitais para
@@ -38,7 +41,7 @@ export default function Transformation() {
           </p>
         </div>
 
-        <div className="mb-[3.25rem] flex items-center justify-start pt-[2rem] md:w-full">
+        <div className="mb-[3.25rem] flex items-center justify-start pt-[2rem] ">
           <img
             className="z-10 w-[15rem] md:mt-[12rem] md:h-[18rem] md:w-[18rem]"
             src={"images/foto1.png"}

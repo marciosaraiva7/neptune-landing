@@ -12,13 +12,13 @@ export default function Banner() {
         id="banner"
         className="mt-[-2rem] scroll-smooth md:mt-[-5rem] md:pt-[2.5rem]"
       >
-        <div className=" relative h-[765px] w-full items-center justify-between bg-[#08205E] text-sm md:flex md:h-auto">
+        <div className=" relative w-full items-center justify-between bg-[#08205E] text-sm md:flex md:h-auto">
           <ImageBanner
             image={"images/banner.png"}
             imageStyleClass="hidden h-[auto] w-full object-cover md:block"
             preview={undefined}
             alt={""}
-            divStyleClass={"hidden md:h-[770px] md:block"}
+            divStyleClass={"hidden md:max-h-[770px] w-full md:block"}
             bgColor={""}
           />
           <video
@@ -28,9 +28,9 @@ export default function Banner() {
             muted
             playsInline
             preload="true"
-            className="h-[765px] w-full md:hidden"
+            className="h-auto w-full md:hidden"
           />
-          <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-end bg-black bg-opacity-20 md:pt-[5rem]">
+          <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-end bg-black bg-opacity-20 py-[5rem]  md:pt-[5rem]">
             <p className="mb-16 text-center text-[3.2rem] font-bold  leading-[2.738rem] text-white md:mb-[1.25rem] md:w-[45rem] md:text-[3.438rem] md:leading-[3.438rem]">
               Transforme seu negócio com aplicações digitais
             </p>
@@ -47,7 +47,7 @@ export default function Banner() {
             <span className=" z-20 mb-[0.438rem] text-white ">
               Conheça nosso trabalho
             </span>
-            <img className="z-20 md:mb-[5rem]" src="images/arrow-down.svg" />
+            <img className="z-20 " src="images/arrow-down.svg" />
           </div>
         </div>
       </div>

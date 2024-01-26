@@ -39,12 +39,12 @@ export default function Contact() {
     <>
       <div
         id="contact"
-        className="w-full bg-[#6992E0] px-[0.5rem] md:px-[4.938rem]"
+        className="flex w-full justify-center bg-[#6992E0] px-[0.5rem] md:px-[4.938rem]"
         style={{
           backgroundImage: "linear-gradient(to bottom, transparent,#08205E)",
         }}
       >
-        <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-white p-[2rem]">
+        <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-white p-[2rem] md:max-w-[80rem]">
           {!check && (
             <p className="mb-[1rem] text-center text-[1.6rem] font-bold text-[#1D4D9D] md:text-[1.75rem]">
               Fale com um especialista!

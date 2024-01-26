@@ -2,7 +2,7 @@ export default function Approuch() {
   return (
     <div
       id="approach"
-      className="flex w-full flex-col items-center justify-center"
+      className="flex w-full flex-col items-center justify-center pb-[5rem]"
       style={{
         backgroundImage: "linear-gradient(to bottom, #6992E0, #6992E0)",
       }}
