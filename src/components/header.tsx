@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <header className="header-gradient-light fixed left-0 top-0 z-50 flex h-[7.563rem] w-full text-white md:h-28 md:py-4">
-      <div className="container mx-auto flex items-start justify-between px-4 py-4 md:items-center md:px-0 md:py-0">
+      <div className="container mx-auto flex items-start justify-between px-4 py-4 md:items-center">
         <div className="flex items-center">
           <Link href="#banner" className="scroll-smooth">
             <img
