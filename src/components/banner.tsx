@@ -28,7 +28,7 @@ export default function Banner() {
             muted
             playsInline
             preload="true"
-            className="h-[auto] w-full md:hidden"
+            className="h-[765px] w-full md:hidden"
           />
           <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-end bg-black bg-opacity-20 md:pt-[5rem]">
             <p className="mb-16 text-center text-[3.2rem] font-bold  leading-[2.738rem] text-white md:mb-[1.25rem] md:w-[45rem] md:text-[3.438rem] md:leading-[3.438rem]">
