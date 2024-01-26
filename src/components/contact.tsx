@@ -116,8 +116,8 @@ export default function Contact() {
             backgroundImage: "linear-gradient(to bottom, transparent,#08205E)",
           }}
         ></div>
-        <div className="relative z-[5] mt-[-10rem] h-[278px] w-full bg-[#08205E]">
-          <div className="absolute bottom-[12rem] left-[20px] md:left-[80px]">
+        <div className="relative z-[5] mt-[-10rem] h-[165px] w-full bg-[#08205E]">
+          <div className="absolute bottom-[5rem] left-[20px] md:left-[80px]">
             <img
               src="images/logo.svg"
               alt="logo"
