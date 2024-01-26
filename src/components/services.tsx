@@ -16,7 +16,7 @@ export default function Services() {
         </div>
         <div className="flex flex-col items-center justify-center gap-[7.625rem] pb-[5.125rem] md:flex-row md:items-start">
           <div className="flex max-w-[14.938rem] flex-col items-center ">
-            <img src="/images/sites.svg" className="mb-[1.813rem]" />
+            <img src="/images/sites.svg" className="mb-[1.813rem] h-[5rem]" />
             <p className="mb-[0.813rem] text-center text-[1.5rem]  font-bold leading-[1.625rem] text-[#08205E] md:text-[1.438rem] md:leading-[1.563rem]">
               Sites
             </p>
@@ -27,7 +27,10 @@ export default function Services() {
             <a className="text-[#08205E] underline">Saiba mais</a>
           </div>
           <div className="flex max-w-[14.938rem] flex-col items-center">
-            <img src="/images/aplicativos.svg" className="mb-[1.813rem]" />
+            <img
+              src="/images/aplicativos.svg"
+              className="mb-[1.813rem] h-[5rem]"
+            />
             <p className="mb-[0.813rem] text-center text-[1.5rem]  font-bold leading-[1.625rem] text-[#08205E] md:text-[1.438rem] md:leading-[1.563rem]">
               Aplicativos
             </p>
@@ -38,7 +41,10 @@ export default function Services() {
             <a className="text-[#08205E] underline">Saiba mais</a>
           </div>
           <div className="flex max-w-[14.938rem] flex-col items-center">
-            <img src="/images/sistemas.svg" className="mb-[1.813rem]" />
+            <img
+              src="/images/sistemas.svg"
+              className="mb-[1.813rem] h-[5rem]"
+            />
             <p className="mb-[0.813rem] text-center text-[1.5rem]  font-bold leading-[1.625rem] text-[#08205E] md:text-[1.438rem] md:leading-[1.563rem]">
               Sistemas
             </p>
