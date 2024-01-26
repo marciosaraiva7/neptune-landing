@@ -2,7 +2,7 @@ export default function Approuch() {
   return (
     <div
       id="approach"
-      className="opac flex w-full flex-col items-center justify-center"
+      className="flex w-full flex-col items-center justify-center"
       style={{
         backgroundImage: "linear-gradient(to bottom, #6992E0, #6992E0)",
       }}

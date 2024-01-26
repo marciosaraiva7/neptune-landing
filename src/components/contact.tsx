@@ -39,9 +39,9 @@ export default function Contact() {
     <>
       <div
         id="contact"
-        className="w-full px-[0.5rem] md:px-[4.938rem]"
+        className="w-full bg-[#6992E0] px-[0.5rem] md:px-[4.938rem]"
         style={{
-          backgroundImage: "linear-gradient(to bottom, #6992E0, #08205E)",
+          backgroundImage: "linear-gradient(to bottom, transparent,#08205E)",
         }}
       >
         <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-white p-[2rem]">
@@ -109,18 +109,26 @@ export default function Contact() {
           )}
         </div>
       </div>
-      <div className="relative z-[5] mt-[-10rem] h-[278px] w-full bg-[#08205E]">
-        <div className="absolute bottom-[2rem] left-11">
-          <img
-            src="images/logo.svg"
-            alt="logo"
-            className="mb-[0.8rem] w-[6.375rem]"
-          />
-          <span className="text-[0.8rem] font-normal text-white">
-            Cnpj: 52.163.042/0001-47
-          </span>
+      <>
+        <div
+          className=" mt-[-15rem] h-[25rem]"
+          style={{
+            backgroundImage: "linear-gradient(to bottom, transparent,#08205E)",
+          }}
+        ></div>
+        <div className="relative z-[5] mt-[-10rem] h-[278px] w-full bg-[#08205E]">
+          <div className="absolute bottom-[12rem] left-[20px] md:left-[80px]">
+            <img
+              src="images/logo.svg"
+              alt="logo"
+              className="mb-[0.8rem] w-[6.375rem]"
+            />
+            <span className="text-[0.8rem] font-normal text-white">
+              Cnpj: 52.163.042/0001-47
+            </span>
+          </div>
         </div>
-      </div>
+      </>
     </>
   );
 }

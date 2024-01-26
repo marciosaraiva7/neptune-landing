@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div id="services">
       {/* <div className="header-gradient mt-[-2rem] h-[3.5rem] rotate-180"></div> */}
-      <div className="bg-white">
+      <div className="mb-[5rem] bg-white">
         <div className="mb-[5.375rem] flex flex-col items-center justify-center pt-[2rem]">
           <p className="mb-[0.5rem] w-[85%] text-center text-[1.8rem] font-bold leading-[2.2rem] text-[#FF465D] md:w-[45rem] md:text-left md:text-[2.5rem]  md:leading-[3rem] ">
             Soluções digitais para o seu negócio
