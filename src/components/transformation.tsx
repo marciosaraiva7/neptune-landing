@@ -7,30 +7,30 @@ export default function Transformation() {
   return (
     <div id="about" className="flex flex-col bg-[#6992E0] md:flex md:px-16">
       <div className="flex flex-col md:flex-row">
-        <div className="flex flex-col items-center pt-[3.813rem] md:mb-[5rem]">
+        <div className=" flex flex-col items-center pt-[3.813rem] md:mb-[5rem]">
           <p className="mb-[2.2rem] w-[80%] text-left text-[1.6rem] font-bold leading-[2rem] text-[#08205E] md:text-[2.188rem]  md:leading-[2.625rem]">
             Por que escolher a Neptune para desenvolver aplicações digitais para
             o seu negócio?
           </p>
-          <p className="mb-[0.5rem] w-[80%] text-left text-[1.038rem] leading-[1.288rem] text-white  md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[2rem] w-[80%] text-left text-[1.038rem] leading-[1.288rem] text-white md:mb-[0.5rem]  md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             Na Neptune Lab, oferecemos uma série de vantagens que a tornam a
             escolha certa para o desenvolvimento de aplicações digitais para o
             seu negócio.
           </p>
-          <p className="mb-[0.5rem]  w-[80%] text-pretty text-[1.038rem] leading-[1.288rem] text-white md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[2rem] w-[80%]  text-pretty text-[1.038rem] leading-[1.288rem] text-white md:mb-[0.5rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             <span className="mr-2 inline-block h-[10px] w-[10px] rounded-full bg-[#1D4D9D]"></span>
             <strong>Profissionais qualificados: </strong>
             Nossos profissionais são altamente qualificados e experientes, e
             trabalham com as melhores tecnologias do mercado.
           </p>
-          <p className="mb-[0.5rem]  w-[80%] text-pretty text-[1.038rem] leading-[1.288rem] text-white md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[2rem] w-[80%]  text-pretty text-[1.038rem] leading-[1.288rem] text-white md:mb-[0.5rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             <span className="mr-2 inline-block h-[10px] w-[10px] rounded-full bg-[#1D4D9D]"></span>
             <strong>Abordagem personalizada: </strong>
             Trabalhamos com os nossos clientes para entender suas necessidades
             específicas e desenvolver aplicações que atendam às suas
             expectativas.
           </p>
-          <p className="mb-[0.5rem]  w-[80%] text-pretty text-[1.038rem] leading-[1.288rem] text-white md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[2rem] w-[80%]  text-pretty text-[1.038rem] leading-[1.288rem] text-white md:mb-[0.5rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             <span className="mr-2 inline-block h-[10px] w-[10px] rounded-full bg-[#1D4D9D]"></span>
             <strong>Prazos e orçamentos ajustados: </strong>
             Trabalhamos com prazos e orçamentos ajustados para garantir que você
