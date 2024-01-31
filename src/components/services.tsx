@@ -20,7 +20,7 @@ export default function Services() {
             <p className="mb-[0.813rem] text-center text-[1.5rem]  font-bold leading-[1.625rem] text-[#08205E] md:text-[1.438rem] md:leading-[1.563rem]">
               Sites
             </p>
-            <p className="mb-[1.313rem] text-center text-[0.938rem] leading-[1.188rem] text-[#08205E] md:mb-[0.75rem] md:h-[5.5rem] md:text-[1.125rem] md:leading-[1.375rem]">
+            <p className="mb-[1.313rem] text-justify  text-[0.938rem] leading-[1.188rem] text-[#08205E] md:mb-[0.75rem] md:h-[5.5rem] md:text-[1.125rem] md:leading-[1.375rem]">
               Um site é a vitrine virtual da sua marca, aberta 24 horas por dia,
               7 dias por semana.
             </p>
@@ -34,7 +34,7 @@ export default function Services() {
             <p className="mb-[0.813rem] text-center text-[1.5rem]  font-bold leading-[1.625rem] text-[#08205E] md:text-[1.438rem] md:leading-[1.563rem]">
               Aplicativos
             </p>
-            <p className="mb-[1.313rem] text-center text-[0.938rem] leading-[1.188rem] text-[#08205E] md:mb-[0.75rem] md:h-[5.5rem] md:text-[1.125rem] md:leading-[1.375rem]">
+            <p className="mb-[1.313rem] text-justify  text-[0.938rem] leading-[1.188rem] text-[#08205E] md:mb-[0.75rem] md:h-[5.5rem] md:text-[1.125rem] md:leading-[1.375rem]">
               Um aplicativo coloca serviços e informações essenciais
               literalmente na ponta dos dedos do usuário
             </p>
@@ -48,7 +48,7 @@ export default function Services() {
             <p className="mb-[0.813rem] text-center text-[1.5rem]  font-bold leading-[1.625rem] text-[#08205E] md:text-[1.438rem] md:leading-[1.563rem]">
               Sistemas
             </p>
-            <p className="mb-[1.313rem] text-center text-[0.938rem] leading-[1.188rem] text-[#08205E] md:mb-[0.75rem] md:h-[5.5rem] md:text-[1.125rem] md:leading-[1.375rem]">
+            <p className="mb-[1.313rem] text-justify  text-[0.938rem] leading-[1.188rem] text-[#08205E] md:mb-[0.75rem] md:h-[5.5rem] md:text-[1.125rem] md:leading-[1.375rem]">
               Um sistema é a espinha dorsal que sustenta a eficiência e o
               crescimento em qualquer organização.
             </p>
