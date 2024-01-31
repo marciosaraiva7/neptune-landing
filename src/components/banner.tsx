@@ -15,7 +15,7 @@ export default function Banner() {
         className="mt-[-2rem] scroll-smooth md:mt-[-5rem] md:pt-[2.5rem]"
       >
         {isVideoLoaded && isVideoLoadedMobile && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
             {/* <p className="text-white">Carregando...</p> */}
           </div>
         )}
