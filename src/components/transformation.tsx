@@ -56,7 +56,7 @@ export default function Transformation() {
             </p>
           </div>
 
-          <div className="mb-[3.25rem] flex items-center justify-start pt-[2rem] ">
+          <div className="mb-[3.25rem] flex items-center justify-center pt-[2rem] md:justify-start ">
             {/* <img
               className="z-10 w-[15rem] md:mt-[12rem] md:h-[18rem] md:w-[18rem]"
               src={"images/foto1.png"}
@@ -65,7 +65,10 @@ export default function Transformation() {
               className="w-[15rem] md:ml-[-8rem] md:h-[15rem] md:w-[15rem] "
               src={"images/foto2.png"}
             /> */}
-            <img className="" src={"images/office.svg"} />
+            <img
+              className="h-[60%] w-[60%] md:h-auto md:w-auto"
+              src={"images/office.svg"}
+            />
           </div>
         </div>
       </div>
