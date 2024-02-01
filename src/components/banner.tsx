@@ -60,7 +60,7 @@ export default function Banner() {
                   boxShadow:
                     "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
                 }}
-                className="relative mb-[8rem] flex min-h-[2.625rem] w-auto items-center justify-center rounded-full bg-[#FFFFFF] bg-no-repeat text-[1.25rem] font-bold text-[#08205E] transition-all hover:bg-[#6992E0] hover:text-[#ffffff] md:mb-[5rem]"
+                className="rounded- relative mb-[8rem] flex min-h-[2.625rem] items-center justify-center bg-[#FF465D] bg-no-repeat px-[2rem]  text-[1rem]  text-[#FFFFFF] transition-all hover:bg-[#a33d3d] hover:text-[#ffffff] md:mb-[5rem]"
               >
                 Solicitar orçamento
               </Button>

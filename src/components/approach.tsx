@@ -8,8 +8,8 @@ export default function Approuch() {
       }}
     >
       <div className="flex w-full justify-center pb-[3.688rem] pt-[3rem]">
-        <p className="w-[90%] text-justify  text-[1.8rem] font-bold leading-[2.2rem] text-white md:w-[45rem] md:text-[2.188rem]  md:leading-[2.625rem]">
-          Oferecemos uma ampla gama de serviços de desenvolvimento de aplicações
+        <p className="w-[90%] text-center  text-[1.8rem] font-bold leading-[2.2rem] text-white md:w-[45rem] md:text-[2.188rem]  md:leading-[2.625rem]">
+          Transformamos ideias em experiências digitais memoráveis
         </p>
       </div>
       <div className="flex flex-col items-center gap-[1.875rem] md:mb-[1.875rem]  md:flex-row ">
@@ -22,7 +22,7 @@ export default function Approuch() {
           <p className="w-[90%] text-center text-[1.6rem] font-bold leading-[2.2rem] text-[#86B3FF]  md:text-[1.563rem] md:leading-[2.625rem]">
             Automatização de processos
           </p>
-          <p className="mb-[1.313rem] w-[80%] text-justify text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[1.313rem] w-[80%] text-center text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             Automatizar tarefas repetitivas e manuais, libera tempo e recursos
             para que os colaboradores se concentrem em atividades mais
             estratégicas.
@@ -37,7 +37,7 @@ export default function Approuch() {
           <p className="w-[90%] text-center text-[1.6rem] font-bold leading-[2.2rem] text-[#86B3FF]  md:text-[1.563rem] md:leading-[2.625rem]">
             Aumento da produtividade
           </p>
-          <p className="mb-[1.313rem] w-[80%] text-justify  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[1.313rem] w-[80%] text-center  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             As soluções digitais podem ajudar as empresas a aumentar a
             produtividade, reduzindo o tempo gasto em atividades operacionais.
           </p>
@@ -51,7 +51,7 @@ export default function Approuch() {
           <p className="w-[90%] text-center text-[1.6rem] font-bold leading-[2.2rem] text-[#86B3FF]   md:text-[1.563rem] md:leading-[2.625rem]">
             Atração de novos clientes
           </p>
-          <p className="mb-[1.313rem] w-[80%] text-justify  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[1.313rem] w-[80%] text-center  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             As soluções digitais podem ajudar as empresas a alcançar novos
             clientes, ampliando o alcance da marca e aumentando as oportunidades
             de vendas
@@ -67,7 +67,7 @@ export default function Approuch() {
         <p className="w-[90%] text-center text-[1.6rem] font-bold leading-[2.2rem] text-[#86B3FF]   md:text-[1.563rem] md:leading-[2.625rem]">
           Aprimoramento da comunicação
         </p>
-        <p className="mb-[1.313rem] w-[80%] text-justify  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+        <p className="mb-[1.313rem] w-[80%] text-center  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
           Podemos melhorar a comunicação interna e externa da empresa,
           facilitando o compartilhamento de informações e a colaboração entre
           equipes.
@@ -83,7 +83,7 @@ export default function Approuch() {
           <p className="w-[90%] text-center text-[1.6rem] font-bold leading-[2.2rem] text-[#86B3FF]   md:text-[1.563rem] md:leading-[2.625rem]">
             Atração de novos clientes
           </p>
-          <p className="mb-[1.313rem] w-[80%] text-justify  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[1.313rem] w-[80%] text-center  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             As soluções digitais podem ajudar as empresas a alcançar novos
             clientes, ampliando o alcance da marca e aumentando as oportunidades
             de vendas
@@ -98,7 +98,7 @@ export default function Approuch() {
           <p className="w-[90%] text-center text-[1.6rem] font-bold leading-[2.2rem] text-[#86B3FF]   md:text-[1.563rem] md:leading-[2.625rem]">
             Aprimoramento da comunicação
           </p>
-          <p className="mb-[1.313rem] w-[80%] text-justify  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
+          <p className="mb-[1.313rem] w-[80%] text-center  text-[0.938rem] leading-[1.188rem] text-white md:mb-[0.75rem] md:h-[5.5rem] md:text-[1rem] md:leading-[1.375rem]">
             Podemos melhorar a comunicação interna e externa da empresa,
             facilitando o compartilhamento de informações e a colaboração entre
             equipes.

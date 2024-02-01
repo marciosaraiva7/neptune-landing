@@ -2,28 +2,37 @@
 
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { Journey } from "./journey";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Transformation() {
   return (
     <>
+      <div className="flex items-center justify-center bg-[#6992E0] pb-[9.75rem]">
+        <Link href={"#contact"}>
+          <Button
+            style={{
+              boxShadow:
+                "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
+            }}
+            className="rounded- relative mb-[8rem] flex min-h-[2.625rem] items-center justify-center bg-[#FF465D] bg-no-repeat px-[2rem]  text-[1rem]  text-[#FFFFFF] transition-all hover:bg-[#a33d3d] hover:text-[#ffffff] md:mb-[5rem]"
+          >
+            Fale com um especialista!
+          </Button>
+        </Link>
+      </div>
+      <div className="relative flex flex-col items-center justify-center bg-[#6992E0]">
+        <p className="mb-[4.813rem] text-[2.188rem] font-bold leading-[2.625rem] text-white">
+          Nossa abordagem
+        </p>
+      </div>
+      <div className="flex items-center justify-center bg-[#6992E0] pb-[9.188rem]">
+        <Journey />
+      </div>
       <div
         id="about"
         className="flex flex-col items-center bg-[#6992E0] md:flex md:px-16"
       >
-        <div className="flex items-center justify-center">
-          <Link href={"#contact"}>
-            <Button
-              style={{
-                boxShadow:
-                  "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
-              }}
-              className="relative mb-[8rem] flex min-h-[2.625rem] w-auto items-center justify-center rounded-full bg-[#08205E] bg-no-repeat text-[1.25rem] font-bold text-[#FFFFFF] transition-all hover:bg-[#ffffff] hover:text-[#6992E0] md:mb-[5rem]"
-            >
-              Fale com um especialista!
-            </Button>
-          </Link>
-        </div>
         <div className="flex flex-col justify-center md:max-w-[80rem] md:flex-row">
           <div className=" flex flex-col items-center pt-[3.813rem] md:mb-[5rem]">
             <p className="mb-[2.2rem] w-[80%] text-left text-[1.6rem] font-bold leading-[2rem] text-[#08205E] md:text-[2.188rem]  md:leading-[2.625rem]">
@@ -72,9 +81,6 @@ export default function Transformation() {
           </div>
         </div>
       </div>
-      {/* <div className="relative flex flex-col items-center justify-center bg-transparent">
-        <p className="bg-transparent">Nossa abordagem</p>
-      </div> */}
     </>
   );
 }
