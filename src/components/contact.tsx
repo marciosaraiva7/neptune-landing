@@ -69,7 +69,7 @@ export default function Contact() {
                   className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
                   onClick={() => {
                     if (nameInputRef.current) {
-                      nameInputRef.current.focus();
+                      (nameInputRef.current as HTMLInputElement).focus();
                     }
                   }}
                 >
@@ -85,7 +85,7 @@ export default function Contact() {
                   className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
                   onClick={() => {
                     if (emailInputRef.current) {
-                      emailInputRef.current.focus();
+                      (emailInputRef.current as HTMLInputElement).focus();
                     }
                   }}
                 >
@@ -102,7 +102,7 @@ export default function Contact() {
                   className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
                   onClick={() => {
                     if (telInputRef.current) {
-                      telInputRef.current.focus();
+                      (telInputRef.current as HTMLInputElement).focus();
                     }
                   }}
                 >
@@ -119,7 +119,7 @@ export default function Contact() {
                   className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
                   onClick={() => {
                     if (messageInputRef.current) {
-                      messageInputRef.current.focus();
+                      (messageInputRef.current as HTMLInputElement).focus();
                     }
                   }}
                 >
