@@ -8,33 +8,17 @@ import { Journey } from "./journey";
 export default function Transformation() {
   return (
     <>
-      <div className="flex items-center justify-center bg-[#6992E0] pb-[9.75rem]">
-        <Link href={"#contact"}>
-          <Button
-            style={{
-              boxShadow:
-                "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
-            }}
-            className="rounded- relative mb-[8rem] flex min-h-[2.625rem] items-center justify-center bg-[#FF465D] bg-no-repeat px-[2rem]  text-[1rem]  text-[#FFFFFF] transition-all hover:bg-[#a33d3d] hover:text-[#ffffff] md:mb-[5rem]"
-          >
-            Fale com um especialista!
-          </Button>
-        </Link>
-      </div>
-      <div className="relative flex flex-col items-center justify-center bg-[#6992E0]">
+      <div className="relative flex flex-col items-center justify-center pt-[6.625rem]">
         <p className="mb-[4.813rem] text-[2.188rem] font-bold leading-[2.625rem] text-white">
           Nossa abordagem
         </p>
       </div>
-      <div className="flex items-center justify-center bg-[#6992E0] pb-[9.188rem]">
+      <div className="flex items-center justify-center  pb-[9.188rem]">
         <Journey />
       </div>
-      <div
-        id="about"
-        className="flex flex-col items-center bg-[#6992E0] md:flex md:px-16"
-      >
+      <div id="about" className="flex flex-col items-center  md:flex md:px-16">
         <div className="flex flex-col justify-center md:max-w-[80rem] md:flex-row">
-          <div className=" flex flex-col items-center pt-[3.813rem] md:mb-[5rem]">
+          <div className=" flex w-[62%] flex-col items-center pt-[3.813rem] md:mb-[5rem] md:w-full">
             <p className="mb-[2.2rem] w-[80%] text-left text-[1.6rem] font-bold leading-[2rem] text-[#08205E] md:text-[2.188rem]  md:leading-[2.625rem]">
               Por que escolher a Neptune para desenvolver aplicações digitais
               para o seu negócio?
@@ -66,14 +50,6 @@ export default function Transformation() {
           </div>
 
           <div className="mb-[3.25rem] flex items-center justify-center pt-[2rem] md:justify-start ">
-            {/* <img
-              className="z-10 w-[15rem] md:mt-[12rem] md:h-[18rem] md:w-[18rem]"
-              src={"images/foto1.png"}
-            />
-            <img
-              className="w-[15rem] md:ml-[-8rem] md:h-[15rem] md:w-[15rem] "
-              src={"images/foto2.png"}
-            /> */}
             <img
               className="h-[60%] w-[60%] md:h-auto md:w-auto"
               src={"images/office.svg"}

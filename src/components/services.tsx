@@ -5,7 +5,7 @@ export default function Services() {
     <div id="services">
       {/* <div className="header-gradient mt-[-2rem] h-[3.5rem] rotate-180"></div> */}
       <div className="mb-[5rem] bg-white">
-        <div className="mb-[5.375rem] flex flex-col items-center justify-center pt-[2rem]">
+        <div className="mb-[5.375rem] flex flex-col items-center justify-center pt-[7rem]">
           <p className="mb-[0.5rem] w-[85%] text-center text-[1.8rem] font-bold leading-[2.2rem] text-[#FF465D] md:w-[45rem] md:text-left md:text-[2.5rem]  md:leading-[3rem] ">
             Soluções digitais para o seu negócio
           </p>
@@ -24,7 +24,7 @@ export default function Services() {
               Um site é a vitrine virtual da sua marca, aberta 24 horas por dia,
               7 dias por semana.
             </p>
-            <a className="text-[#08205E] underline">Saiba mais</a>
+            <a className="text-[#08205E] underline"> </a>
           </div>
           <div className="flex max-w-[14.938rem] flex-col items-center">
             <img
@@ -38,7 +38,7 @@ export default function Services() {
               Um aplicativo coloca serviços e informações essenciais
               literalmente na ponta dos dedos do usuário
             </p>
-            <a className="text-[#08205E] underline">Saiba mais</a>
+            <a className="text-[#08205E] underline"> </a>
           </div>
           <div className="flex max-w-[14.938rem] flex-col items-center">
             <img
@@ -52,7 +52,7 @@ export default function Services() {
               Um sistema é a espinha dorsal que sustenta a eficiência e o
               crescimento em qualquer organização.
             </p>
-            <a className="text-[#08205E] underline">Saiba mais</a>
+            <a className="text-[#08205E] underline"> </a>
           </div>
         </div>
       </div>

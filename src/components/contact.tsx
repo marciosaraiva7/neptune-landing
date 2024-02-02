@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { FormEvent } from "react";
 import InputMask from "react-input-mask";
 import { ButtonLoading } from "./ui/button-loading";
@@ -35,14 +35,16 @@ export default function Contact() {
     }
     // ...
   }
+  const nameInputRef = useRef(null);
+  const emailInputRef = useRef(null);
+  const telInputRef = useRef(null);
+  const messageInputRef = useRef(null);
+
   return (
     <>
       <div
         id="contact"
-        className="flex w-full justify-center bg-[#6992E0] px-[0.5rem] md:px-[4.938rem]"
-        style={{
-          backgroundImage: "linear-gradient(to bottom, transparent,#08205E)",
-        }}
+        className="flex w-full justify-center px-[0.5rem] md:px-[4.938rem]"
       >
         <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-white p-[2rem] md:max-w-[80rem]">
           {!check && (
@@ -58,41 +60,77 @@ export default function Contact() {
             </p>
           )}
           {!check && (
-            <form onSubmit={onSubmit} className="flex flex-col gap-[3rem]">
-              <div className="mb-[3rem] flex flex-col gap-[1.6rem]">
-                <input
-                  placeholder="Nome"
-                  className="text-black placeholder:text-[#FF465D] focus-visible:outline-none md:text-[1.125rem]"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                  placeholder="Email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="text-black placeholder:text-[#FF465D] focus-visible:outline-none md:text-[1.125rem]"
-                />
-                <InputMask
-                  placeholder="Telefone"
-                  mask="99 9 9999-9999"
-                  value={tel}
-                  onChange={(e) => setTel(e.target.value)}
-                  className="text-black placeholder:text-[#FF465D] focus-visible:outline-none md:text-[1.125rem]"
-                />
-                {/* <input
-                  placeholder="Telefone"
-                  type="tel"
-                  value={tel}
-                  onChange={(e) => setTel(e.target.value)}
-                  className="text-black placeholder:text-[#FF465D] focus-visible:outline-none md:text-[1.125rem]"
-                /> */}
-                <textarea
-                  placeholder="Mensagem"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  className="text-black placeholder:text-[#FF465D] focus-visible:outline-none md:text-[1.125rem]"
-                />
+            <form
+              onSubmit={onSubmit}
+              className="flex w-full flex-col items-center gap-[3rem]"
+            >
+              <div className="mb-[3rem] flex w-[50%] flex-col gap-[1.6rem]">
+                <div
+                  className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
+                  onClick={() => {
+                    if (nameInputRef.current) {
+                      nameInputRef.current.focus();
+                    }
+                  }}
+                >
+                  <p className="text-[#FF465D] md:text-[1.125rem]">Nome</p>
+                  <input
+                    ref={nameInputRef}
+                    className="left-0 bg-transparent text-black focus-visible:outline-none md:text-[1.125rem]"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                </div>
+                <div
+                  className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
+                  onClick={() => {
+                    if (emailInputRef.current) {
+                      emailInputRef.current.focus();
+                    }
+                  }}
+                >
+                  <p className="text-[#FF465D] md:text-[1.125rem]">Email</p>
+                  <input
+                    ref={emailInputRef}
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="bg-transparent text-black focus-visible:outline-none md:text-[1.125rem]"
+                  />
+                </div>
+                <div
+                  className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
+                  onClick={() => {
+                    if (telInputRef.current) {
+                      telInputRef.current.focus();
+                    }
+                  }}
+                >
+                  <p className="text-[#FF465D] md:text-[1.125rem]">Telefone</p>
+                  <InputMask
+                    ref={telInputRef}
+                    mask="99 9 9999-9999"
+                    value={tel}
+                    onChange={(e) => setTel(e.target.value)}
+                    className="bg-transparent text-black focus-visible:outline-none md:text-[1.125rem]"
+                  />
+                </div>
+                <div
+                  className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
+                  onClick={() => {
+                    if (messageInputRef.current) {
+                      messageInputRef.current.focus();
+                    }
+                  }}
+                >
+                  <p className="text-[#FF465D] md:text-[1.125rem]">Mensagem</p>
+                  <textarea
+                    ref={messageInputRef}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    className="bg-transparent text-black focus-visible:outline-none md:text-[1.125rem]"
+                  />
+                </div>
               </div>
               <div className="flex justify-center">
                 <ButtonLoading
@@ -110,13 +148,8 @@ export default function Contact() {
         </div>
       </div>
       <>
-        <div
-          className=" mt-[-15rem] h-[25rem]"
-          style={{
-            backgroundImage: "linear-gradient(to bottom, transparent,#08205E)",
-          }}
-        ></div>
-        <div className="relative z-[5] mt-[-10rem] h-[165px] w-full bg-[#08205E]">
+        <div className=" mt-[-15rem] h-[25rem]"></div>
+        <div className="relative z-[5] mt-[-10rem] h-[165px] w-full ">
           <div className="absolute bottom-[5rem] left-[20px] md:left-[80px]">
             <img
               src="images/logo.svg"

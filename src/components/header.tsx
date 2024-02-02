@@ -7,8 +7,8 @@ import { MenuMobile } from "./menumobile";
 export default function Header() {
   const navItems = [
     { name: "Serviços", href: "#services" },
-    { name: "Abordagem", href: "#approach" },
-    { name: "Sobre nós", href: "#about" },
+    { name: "Vantagens", href: "#approach" },
+    { name: "Abordagem", href: "#about" },
   ];
 
   return (

@@ -14,20 +14,10 @@ export default function Banner() {
         id="banner"
         className="mt-[-2rem] scroll-smooth md:mt-[-5rem] md:pt-[2.5rem]"
       >
-        {!(isVideoLoaded && isVideoLoadedMobile) && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
-            {/* <p className="text-white">Carregando...</p> */}
-          </div>
+        {isVideoLoaded && isVideoLoadedMobile && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-white"></div>
         )}
         <div className=" relative w-full items-center justify-between text-sm md:flex md:h-auto">
-          {/* <ImageBanner
-            image={"images/banner.png"}
-            imageStyleClass="hidden h-[770px] w-full object-cover md:block"
-            preview={undefined}
-            alt={""}
-            divStyleClass={"hidden md:max-h-[770px] w-full md:block"}
-            bgColor={"#08205E"}
-          /> */}
           <video
             src={"videos/banner.mp4"}
             autoPlay
@@ -50,7 +40,7 @@ export default function Banner() {
             <p className="mb-16 text-center text-[2.9rem] font-bold  leading-[2.738rem] text-white md:mb-[1.25rem] md:w-[45rem] md:text-[3.438rem] md:leading-[3.438rem]">
               Transforme seu negócio com aplicações digitais
             </p>
-            <p className="mb-[4.375rem] w-[70%] text-center text-[1.1rem] leading-[1.5rem] text-white md:w-[36rem] md:text-[1.563rem] md:leading-[2.188rem]">
+            <p className="mb-[4.375rem] w-[70%] text-center text-[1.1rem] leading-[1.5rem] text-white md:w-[40%] md:text-[1.563rem] md:leading-[2.188rem]">
               A transformação digital é uma realidade que está transformando a
               maneira como as empresas operam.
             </p>

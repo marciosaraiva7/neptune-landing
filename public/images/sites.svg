@@ -1,10 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="117.541" height="57.374" viewBox="0 0 117.541 57.374">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="117.541" height="57.374" viewBox="0 0 117.541 57.374">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#86b3ff"/>
+      <stop offset="1" stop-color="#64c6ff"/>
+    </linearGradient>
+  </defs>
   <g id="Group_10278" data-name="Group 10278" transform="translate(-4.218 -34.593)">
     <g id="Group_10269" data-name="Group 10269" transform="translate(4.218 34.593)">
       <path id="Path_3965" data-name="Path 3965" d="M0,416.909c0,.116.132.209.3.209H117.243c.165,0,.3-.093.3-.209s-.132-.209-.3-.209H.3C.134,416.7,0,416.793,0,416.909Z" transform="translate(0 -365.135)" fill="#2f2e43"/>
       <path id="Path_3966" data-name="Path 3966" d="M240.191,52.07H162.66V2.142A2.144,2.144,0,0,1,164.8,0h73.247a2.144,2.144,0,0,1,2.142,2.142Z" transform="translate(-142.531)" fill="#08205e"/>
       <path id="Path_3967" data-name="Path 3967" d="M194.756,424.2H104.125a.68.68,0,0,1-.354-1.26l7.065-4.31h77.493l.022.014,6.771,4.3a.68.68,0,0,1-.364,1.254Z" transform="translate(-90.642 -366.826)" fill="#dfdfdf"/>
-      <rect id="Rectangle_6634" data-name="Rectangle 6634" width="73.376" height="45.617" transform="translate(22.162 3.183)" fill="#80abf4"/>
+      <rect id="Rectangle_6634" data-name="Rectangle 6634" width="73.376" height="45.617" transform="translate(22.162 3.183)" fill="url(#linear-gradient)"/>
       <path id="Path_3968" data-name="Path 3968" d="M237.77,419.156H159.09L162.979,416h71.078Z" transform="translate(-139.403 -364.521)" fill="#08205e"/>
       <path id="Path_3969" data-name="Path 3969" d="M362.137,443.621H324.83l1.414-2.121h34.478Z" transform="translate(-284.633 -386.866)" fill="#08205e"/>
       <path id="Path_3970" data-name="Path 3970" d="M621.42,162.815h-3.887a.613.613,0,1,1,0-1.225h3.887a.613.613,0,0,1,0,1.225Z" transform="translate(-540.578 -141.594)" fill="#dfdfdf"/>

@@ -1,11 +1,14 @@
+import Link from "next/link";
+import { Button } from "./ui/button";
+
 export default function Approuch() {
   return (
     <div
       id="approach"
-      className="flex w-full flex-col items-center justify-center pb-[5rem]"
-      style={{
-        backgroundImage: "linear-gradient(to bottom, #6992E0, #6992E0)",
-      }}
+      className="flex w-full flex-col items-center justify-center bg-[#1D4D9D33] pb-[3.125rem] "
+      // style={{
+      //   backgroundImage: "linear-gradient(to bottom, #6992E0, #6992E0)",
+      // }}
     >
       <div className="flex w-full justify-center pb-[3.688rem] pt-[3rem]">
         <p className="w-[90%] text-center  text-[1.8rem] font-bold leading-[2.2rem] text-white md:w-[45rem] md:text-[2.188rem]  md:leading-[2.625rem]">
@@ -73,7 +76,7 @@ export default function Approuch() {
           equipes.
         </p>
       </div>
-      <div className="flex gap-[1.875rem]">
+      <div className="mb-[3.125rem] flex gap-[1.875rem]">
         <div
           className="hidden w-[90%] cursor-pointer flex-col items-center justify-center gap-[0.8rem] rounded-[10px] pt-[0.5rem] transition-all duration-300 hover:scale-105 active:scale-90 md:flex md:max-w-[30rem]"
           style={{
@@ -104,6 +107,19 @@ export default function Approuch() {
             equipes.
           </p>
         </div>
+      </div>
+      <div className="flex items-center justify-center bg-[#6992E0]">
+        <Link href={"#contact"}>
+          <Button
+            style={{
+              boxShadow:
+                "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
+            }}
+            className="rounded- relative flex min-h-[2.625rem] items-center justify-center bg-[#FF465D] bg-no-repeat px-[2rem]  text-[1rem]  text-[#FFFFFF] transition-all hover:bg-[#a33d3d] hover:text-[#ffffff] "
+          >
+            Fale com um especialista!
+          </Button>
+        </Link>
       </div>
     </div>
   );

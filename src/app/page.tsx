@@ -6,12 +6,18 @@ import Transformation from "@/components/transformation";
 
 export default function Home() {
   return (
-    <main className="bg-white flex min-h-screen flex-col pt-8">
+    <main className="flex min-h-screen flex-col bg-white pt-8">
       <Banner />
       <Services />
-      <Approuch />
-      <Transformation />
-      <Contact />
+      <div
+        style={{
+          backgroundImage: "linear-gradient(to bottom, #86B3FF,#08205E)",
+        }}
+      >
+        <Approuch />
+        <Transformation />
+        <Contact />
+      </div>
     </main>
   );
 }
