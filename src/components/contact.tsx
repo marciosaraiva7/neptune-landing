@@ -64,7 +64,7 @@ export default function Contact() {
               onSubmit={onSubmit}
               className="flex w-full flex-col items-center gap-[3rem]"
             >
-              <div className="mb-[3rem] flex w-[50%] flex-col gap-[1.6rem]">
+              <div className="mb-[3rem] flex flex-col gap-[1.6rem] md:w-[50%]">
                 <div
                   className="flex gap-2 rounded-[5px] bg-[#DDDDDD80] px-[0.625rem] py-[0.5rem]"
                   onClick={() => {
