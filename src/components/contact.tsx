@@ -4,6 +4,8 @@ import { useState, useRef } from "react";
 import { FormEvent } from "react";
 import InputMask from "react-input-mask";
 import { ButtonLoading } from "./ui/button-loading";
+import { Button } from "./ui/button";
+import { PlusIcon } from "@radix-ui/react-icons";
 
 /* eslint-disable @next/next/no-img-element */
 export default function Contact() {
@@ -35,6 +37,14 @@ export default function Contact() {
     }
     // ...
   }
+
+  function newMessage() {
+    setName("");
+    setEmail("");
+    setTel("");
+    setMessage("");
+    setCheck(false);
+  }
   const nameInputRef = useRef(null);
   const emailInputRef = useRef(null);
   const telInputRef = useRef(null);
@@ -44,7 +54,7 @@ export default function Contact() {
     <>
       <div
         id="contact"
-        className="flex w-full justify-center px-[0.5rem] md:px-[4.938rem]"
+        className="flex w-full justify-center px-[0.5rem] md:px-[4.938rem] "
       >
         <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-white p-[2rem] md:max-w-[80rem]">
           {!check && (
@@ -79,6 +89,7 @@ export default function Contact() {
                     className="left-0 bg-transparent text-black focus-visible:outline-none md:text-[1.125rem]"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
+                    disabled={loading}
                   />
                 </div>
                 <div
@@ -96,6 +107,7 @@ export default function Contact() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="bg-transparent text-black focus-visible:outline-none md:text-[1.125rem]"
+                    disabled={loading}
                   />
                 </div>
                 <div
@@ -113,6 +125,7 @@ export default function Contact() {
                     value={tel}
                     onChange={(e) => setTel(e.target.value)}
                     className="bg-transparent text-black focus-visible:outline-none md:text-[1.125rem]"
+                    disabled={loading}
                   />
                 </div>
                 <div
@@ -129,6 +142,7 @@ export default function Contact() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     className="bg-transparent text-black focus-visible:outline-none md:text-[1.125rem]"
+                    disabled={loading}
                   />
                 </div>
               </div>
@@ -143,7 +157,23 @@ export default function Contact() {
             </form>
           )}
           {check && (
-            <img src="images/check.png" className="h-[5rem] w-[5rem]" />
+            <div className="flex flex-col items-center justify-center gap-[2rem] py-[1rem]">
+              <img src="images/check.png" className="h-[rem] w-[5rem]" />
+              <p className="text-center text-[1.25rem] leading-[1.625rem] text-green-600">
+                Obrigado! O contato foi enviado, em breve retornaremos o contato
+                🎉
+              </p>
+              <Button
+                onClick={newMessage}
+                style={{
+                  boxShadow:
+                    "0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)",
+                }}
+                className="relative flex h-[2.625rem] items-center justify-center rounded-[1.3125rem] bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] text-white transition-all hover:bg-red-900"
+              >
+                <PlusIcon className="mr-2 h-4 w-4" /> Enviar nova mensagem
+              </Button>
+            </div>
           )}
         </div>
       </div>

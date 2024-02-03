@@ -60,14 +60,14 @@ export function MenuMobile() {
               href={"#approach"}
               className="mb-[40px] text-[1.6rem] text-[#1D4D9D]"
             >
-              Abordagem
+              Vantagens
             </Link>
             <Link
               onClick={toggleMenu}
               href={"#about"}
               className="mb-[142px] text-[1.6rem] text-[#1D4D9D]"
             >
-              Sobre nós
+              Abordagem
             </Link>
             <Link href={"#contact"}>
               <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-3xl bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] transition-all hover:bg-red-900">
