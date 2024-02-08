@@ -31,6 +31,7 @@ export default function Approuch() {
             para que os colaboradores se concentrem em atividades mais
             estratégicas.
           </p>
+          <Meteors number={20} />
         </div>
         <div
           className="flex w-[90%] cursor-pointer flex-col items-center justify-center gap-[0.8rem] rounded-[10px] pt-[0.5rem] transition-all duration-300 hover:scale-105 active:scale-90 md:max-w-[30rem]"
