@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { Meteors } from "./ui/meteors";
 
 export default function Approuch() {
   return (
@@ -17,7 +18,7 @@ export default function Approuch() {
       </div>
       <div className="flex flex-col items-center gap-[1.875rem] md:mb-[1.875rem]  md:flex-row ">
         <div
-          className="flex w-[90%] cursor-pointer flex-col items-center justify-center gap-[0.8rem] rounded-[10px] pt-[0.5rem] transition-all duration-300 hover:scale-105 active:scale-90 md:max-w-[30rem]"
+          className="flex w-[90%] flex-col items-center justify-center gap-[0.8rem] rounded-[10px] pt-[0.5rem]  md:max-w-[30rem]"
           style={{
             backgroundImage: "linear-gradient(to bottom, #1D4D9D, #08205E)",
           }}
