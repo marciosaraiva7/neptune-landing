@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import "../../styles/fonts.css";
 import Header from "@/components/header";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Neptune Lab",
@@ -17,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt" className="scroll-smooth">
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
       </body>

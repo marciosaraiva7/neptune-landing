@@ -17,6 +17,9 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        'graphik': ['Graphik', 'sans-serif'],
+      },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",
       },
