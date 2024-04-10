@@ -2,8 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function Banner() {
   const [isVideoLoaded, setVideoLoaded] = useState(false);
@@ -12,14 +11,14 @@ export default function Banner() {
     <>
       <div
         id="banner"
-        className="font-graphik mt-[-2rem] scroll-smooth md:mt-[-5rem] md:pt-[2.5rem]"
+        className="mt-[-2rem] scroll-smooth font-graphik md:mt-[-5rem] md:pt-[2.5rem]"
       >
         {isVideoLoaded && isVideoLoadedMobile && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-white"></div>
         )}
         <div className=" relative w-full items-center justify-between text-sm md:flex md:h-auto">
           <video
-            src={"https://neuralink.com/assets/static/home.2e4b0118.webm"}
+            src={"/videos/banner-video.mp4"}
             autoPlay
             loop
             muted
@@ -37,11 +36,33 @@ export default function Banner() {
             onLoadedData={() => setVideoLoadedMobile(true)}
           />
           <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-20 md:py-[5rem]  md:pt-[5rem]">
-            {/* <p className="font-graphik mb-16 px-[0.5rem] text-left text-[2.9rem] font-semibold  leading-[2.738rem] tracking-tight text-white md:mb-[1.25rem] md:w-[45rem] md:text-[4.6rem] md:leading-[4.4rem]">
-              Transforme seu negócio com aplicações digitais
-            </p> */}
+            <p
+              className="mb-[0.2rem] px-[0.5rem] text-left font-graphik text-[2.9rem]   leading-[2.738rem] tracking-tight text-white md:mb-[0.25rem] md:w-[45rem] md:text-[4.6rem] md:leading-[4.4rem]"
+              style={{ textShadow: "0px 3px 6px #00000058" }}
+            >
+              <strong>Transforme</strong> seu negócio com{" "}
+            </p>
+            <p
+              className="mb-16 px-[0.5rem] text-left font-graphik text-[2.9rem]   leading-[2.738rem] tracking-tight text-white md:mb-[1.25rem] md:w-[45rem] md:text-[4.6rem] md:leading-[4.4rem]"
+              style={{ textShadow: "0px 3px 6px #00000058" }}
+            >
+              <strong>
+                <Typewriter
+                  words={[
+                    "aplicações digitais",
+                    "e-commerce",
+                    "aplicativos",
+                    "software",
+                  ]}
+                  typeSpeed={60}
+                  deleteSpeed={30}
+                  loop
+                  cursor
+                />
+              </strong>
+            </p>
           </div>
-          <button className="absolute bottom-8 left-1/2 flex h-[4rem] w-[4rem] -translate-x-1/2 transform cursor-pointer items-center justify-center rounded-full bg-transparent backdrop-blur-[20px]">
+          <button className="absolute bottom-16 left-1/2 flex h-[3rem] w-[3rem] -translate-x-1/2 transform cursor-pointer items-center justify-center rounded-full bg-transparent backdrop-blur-[20px] transition-all duration-500 ease-in-out hover:scale-125 active:scale-75">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="30"

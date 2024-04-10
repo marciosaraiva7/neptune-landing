@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "../../styles/fonts.css";
 import Header from "@/components/header";
+import FloatButton from "@/components/floatButton";
 
 export const metadata: Metadata = {
   title: "Neptune Lab",
@@ -18,6 +19,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <FloatButton />
       </body>
     </html>
   );
