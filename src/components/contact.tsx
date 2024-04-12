@@ -66,9 +66,13 @@ export default function Contact() {
             playsInline
             className="hidden h-[770px] w-full object-cover md:block"
           />
+          <img
+            src="/images/abstract.jpeg"
+            className="block h-[770px] w-full object-cover md:hidden"
+          />
         </div>
-        <div className="md:mx-[4.938rem]">
-          <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-transparent p-[2rem] backdrop-blur-[50px]  md:max-w-[80rem]">
+        <div className="pt-[1.5rem] md:mx-[4.938rem] md:pt-0">
+          <div className="relative z-20 mb-[1rem] flex w-full flex-col items-center rounded-[40px] bg-transparent p-[1rem] backdrop-blur-[50px] md:max-w-[80rem]  md:p-8">
             {!check && (
               <p className="mb-[1rem] text-center text-[1.6rem] font-bold text-[#FFFFFF] md:text-[1.75rem]">
                 Fale com um especialista!
@@ -198,7 +202,7 @@ export default function Contact() {
               </div>
             )}
           </div>
-          <div className="sticky z-[20] mt-[-7rem] h-[165px] w-fit">
+          <div className="sticky z-[20] mt-[-1rem] w-fit md:mt-[-7rem] md:h-[165px]">
             <div className="relative bottom-0 left-[20px] md:left-[80px]">
               <img
                 src="images/logo.svg"

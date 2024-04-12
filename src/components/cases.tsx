@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Cases() {
   return (
     <div className="w-full bg-[#ECF0F2]">
-      <div className="grid w-full grid-cols-2 gap-4 pb-[2.563rem] pl-[8.688rem] pt-[4.75rem]">
+      <div className=" flex w-full flex-col-reverse gap-[2.5rem] pb-[2.563rem] pl-[1.25rem] pt-[4.75rem] md:grid md:grid-cols-2 md:gap-4  md:pl-[8.688rem]">
         <div className="flex flex-col items-start justify-start gap-4">
           <div className="flex w-[80%] flex-col gap-[0.563rem] border-b border-black">
             <p className="text-[1.563rem] font-bold leading-[1.875rem] tracking-[-0.016rem]">

@@ -27,7 +27,7 @@ export default function Banner() {
             onLoadedData={() => setVideoLoaded(true)}
           />
           <video
-            src={"videos/neptune-9-16.mp4"}
+            src={"videos/banner-mobile.mp4"}
             autoPlay
             loop
             muted
@@ -35,7 +35,7 @@ export default function Banner() {
             className="min-h-[735px] w-full object-cover md:hidden"
             onLoadedData={() => setVideoLoadedMobile(true)}
           />
-          <div className="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center bg-black bg-opacity-20 md:py-[5rem]  md:pt-[5rem]">
+          <div className="absolute left-0 top-0 flex h-full w-full flex-col items-start justify-center bg-black bg-opacity-20 md:items-center md:py-[5rem]  md:pt-[5rem]">
             <p
               className="mb-[0.2rem] px-[0.5rem] text-left font-graphik text-[2.9rem]   leading-[2.738rem] tracking-tight text-white md:mb-[0.25rem] md:w-[45rem] md:text-[4.6rem] md:leading-[4.4rem]"
               style={{ textShadow: "0px 3px 6px #00000058" }}
