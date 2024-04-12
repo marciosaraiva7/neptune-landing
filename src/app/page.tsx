@@ -11,11 +11,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col bg-white pt-8">
       <Banner />
       <Services />
-      <div
-        style={{
-          backgroundImage: "linear-gradient(to bottom, #86B3FF,#08205E)",
-        }}
-      >
+      <div>
         <Approuch />
         <Clients />
         <Cases />
