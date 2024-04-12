@@ -13,7 +13,7 @@ export default function Banner() {
         id="banner"
         className="mt-[-2rem] scroll-smooth font-graphik md:mt-[-5rem] md:pt-[2.5rem]"
       >
-        {!(isVideoLoaded && isVideoLoadedMobile) && (
+        {isVideoLoaded && isVideoLoadedMobile && (
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-white"></div>
         )}
         <div className=" relative w-full items-center justify-between text-sm md:flex md:h-auto">

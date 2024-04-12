@@ -49,6 +49,7 @@ export default function Contact() {
   const emailInputRef = useRef(null);
   const telInputRef = useRef(null);
   const messageInputRef = useRef(null);
+  const isFormFilled = name && email && tel && message;
 
   return (
     <>
@@ -161,10 +162,16 @@ export default function Contact() {
                     />
                   </div>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center ">
                   <ButtonLoading
+                    type="submit"
                     isLoading={loading}
-                    className="relative flex h-[2.625rem] w-full items-center justify-center rounded-[1.3125rem] border bg-transparent bg-no-repeat text-[1.25rem] leading-[1.625rem] text-white transition-all duration-500 ease-in-out hover:bg-white hover:text-black"
+                    disabled={!isFormFilled || loading} // Desabilita o botão se os campos não estiverem preenchidos ou se estiver carregando
+                    className={`relative  flex h-[2.625rem] w-full items-center justify-center rounded-[1.3125rem] border bg-transparent bg-no-repeat text-[1.25rem] leading-[1.625rem] text-white transition-all duration-500 ease-in-out ${
+                      isFormFilled && !loading
+                        ? "hover:bg-white hover:text-black"
+                        : "opacity-50"
+                    }`}
                   >
                     {!loading ? "Enviar mensagem" : "Enviando..."}
                   </ButtonLoading>
@@ -191,17 +198,17 @@ export default function Contact() {
               </div>
             )}
           </div>
-        </div>
-        <div className="relative z-[5] mt-[-10rem] h-[165px] w-full ">
-          <div className="absolute bottom-[5rem] left-[20px] md:left-[80px]">
-            <img
-              src="images/logo.svg"
-              alt="logo"
-              className="mb-[0.8rem] w-[6.375rem]"
-            />
-            <span className="text-[0.8rem] font-normal text-white">
-              Cnpj: 52.163.042/0001-47
-            </span>
+          <div className="sticky z-[20] mt-[-7rem] h-[165px] w-fit">
+            <div className="relative bottom-0 left-[20px] md:left-[80px]">
+              <img
+                src="images/logo.svg"
+                alt="logo"
+                className="mb-[0.8rem] w-[6.375rem]"
+              />
+              <span className="text-[0.8rem] font-normal text-white">
+                Cnpj: 52.163.042/0001-47
+              </span>
+            </div>
           </div>
         </div>
       </div>
