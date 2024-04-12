@@ -21,8 +21,16 @@ export default function RootLayout({
     <html lang="pt" className="scroll-smooth">
       <head>
         <GoogleTagManager gtmId="GTM-M3R82KK5" />
+
+
       </head>
       <body className={inter.className}>
+        {/* <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3R82KK5"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          }}
+        /> */}
         <Header />
         {children}
       </body>
