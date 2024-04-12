@@ -49,7 +49,7 @@ export default function Contact() {
   const emailInputRef = useRef(null);
   const telInputRef = useRef(null);
   const messageInputRef = useRef(null);
-  const isFormFilled = name && email && tel && message;
+  const isFormFilled = !!name && !!email && !!tel && !!message;
 
   return (
     <>
@@ -170,7 +170,7 @@ export default function Contact() {
                   <ButtonLoading
                     type="submit"
                     isLoading={loading}
-                    isFormFilled={isFormFilled}// Desabilita o botão se os campos não estiverem preenchidos ou se estiver carregando
+                    isFormFilled={isFormFilled} // Desabilita o botão se os campos não estiverem preenchidos ou se estiver carregando
                     className={`relative  flex h-[2.625rem] w-full items-center justify-center rounded-[1.3125rem] border bg-transparent bg-no-repeat text-[1.25rem] leading-[1.625rem] text-white transition-all duration-500 ease-in-out ${
                       isFormFilled && !loading
                         ? "hover:bg-white hover:text-black"
