@@ -5,7 +5,7 @@ export const Journey = () => {
     <div className="flex flex-col px-[2rem] md:flex-row">
       <div className="flex max-w-[9.625rem] flex-col items-center justify-between gap-[1.875rem]">
         <img src="images/client-contact.svg" className="" />
-        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-white">
+        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-[#2B2B2B]">
           Contato com cliente
         </p>
       </div>
@@ -14,7 +14,7 @@ export const Journey = () => {
       </div>
       <div className="flex max-w-[9.625rem] flex-col items-center justify-between gap-[1.875rem]">
         <img src="images/consultory.svg" className="" />
-        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-white">
+        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-[#2B2B2B]">
           Consultoria e entendimento
         </p>
       </div>
@@ -23,7 +23,7 @@ export const Journey = () => {
       </div>
       <div className="flex max-w-[9.625rem] flex-col items-center justify-between gap-[1.875rem]">
         <img src="images/solution.svg" className="" />
-        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-white">
+        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-[#2B2B2B]">
           Proposta de solução
         </p>
       </div>
@@ -32,7 +32,7 @@ export const Journey = () => {
       </div>
       <div className="flex max-w-[9.625rem] flex-col items-center justify-between gap-[1.875rem]">
         <img src="images/onboarding.svg" className="" />
-        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-white">
+        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-[#2B2B2B]">
           Onboarding de processos
         </p>
       </div>
@@ -41,7 +41,7 @@ export const Journey = () => {
       </div>
       <div className="flex max-w-[9.625rem] flex-col items-center justify-between gap-[1.875rem]">
         <img src="images/production.svg" className="" />
-        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-white">
+        <p className="text-balance text-center text-[1.125rem] leading-[1.375rem] text-[#2B2B2B]">
           Produção e desenvolvimento
         </p>
       </div>

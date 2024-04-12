@@ -19,6 +19,9 @@ const config: Config = {
       "2xl": "1536px",
     },
     extend: {
+      fontFamily: {
+        graphik: ["Graphik", "sans-serif"],
+      },
       colors: {
         neonBlue: "#00bfff", // Cor azul neon personalizada
       },

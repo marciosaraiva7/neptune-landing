@@ -1,13 +1,13 @@
+import React, { ReactNode, ButtonHTMLAttributes } from "react";
 import { ReloadIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
-import { ReactNode } from "react";
 
 // Define a type for your component's props
 type ButtonLoadingProps = {
   isLoading: boolean;
   children: ReactNode;
   className?: string; // Optional property
-};
+} & ButtonHTMLAttributes<HTMLButtonElement>;
 
 export function ButtonLoading({
   isLoading,

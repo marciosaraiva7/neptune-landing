@@ -7,7 +7,6 @@ import { Button } from "../ui/button";
 
 export function MenuMobile() {
   const [isOpen, setIsOpen] = useState(false);
-  // Tipando menuRef como HTMLDivElement
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -37,12 +36,12 @@ export function MenuMobile() {
         />
       </button>
       {isOpen && (
-        <div className="absolute left-0 top-0 z-[8] h-[70vh] w-full rounded-b-[40px] bg-white">
+        <div className="absolute left-0 top-0 z-[8] h-[70vh] w-full rounded-b-[40px] bg-[#ffffff80] backdrop-blur-[80px]">
           <div className="flex w-full justify-between p-[20px]">
             <img src="images/logo-color.svg" />
             <button
               onClick={toggleMenu}
-              className="flex h-[2rem] w-[2rem] items-center justify-center rounded-full bg-[#FF465D]"
+              className="flex h-[2rem] w-[2rem] items-center justify-center rounded-full bg-[#000000]"
             >
               <img src="images/close.svg" />
             </button>
@@ -50,27 +49,21 @@ export function MenuMobile() {
           <div className="flex h-full w-full flex-col items-center justify-center">
             <Link
               onClick={toggleMenu}
-              href={"#services"}
-              className="mb-[40px] text-[1.6rem] text-[#1D4D9D]"
+              href={"#approach"}
+              className="mb-[40px] text-[1.6rem] text-[#000000]"
             >
               Serviços
             </Link>
+
             <Link
               onClick={toggleMenu}
-              href={"#approach"}
-              className="mb-[40px] text-[1.6rem] text-[#1D4D9D]"
-            >
-              Vantagens
-            </Link>
-            <Link
-              onClick={toggleMenu}
-              href={"#about"}
-              className="mb-[142px] text-[1.6rem] text-[#1D4D9D]"
+              href={"#transformation"}
+              className="mb-[142px] text-[1.6rem] text-[#000000]"
             >
               Abordagem
             </Link>
             <Link href={"#contact"}>
-              <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-3xl bg-[#FF465D] bg-no-repeat text-[1.25rem] leading-[1.625rem] transition-all hover:bg-red-900">
+              <Button className="relative mb-[8rem] flex h-[2.625rem] w-[14.25rem]  items-center justify-center rounded-3xl border bg-white  bg-no-repeat text-[1.25rem] leading-[1.625rem] text-black transition-all duration-500 ease-in-out ">
                 Entre em contato
               </Button>
             </Link>

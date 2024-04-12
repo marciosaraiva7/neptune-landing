@@ -92,7 +92,7 @@
   );
 }
 .header-gradient-light {
-  background: transparent linear-gradient(180deg, #0e1b2c 0%, #5e667200 100%) 0%
+  background: transparent linear-gradient(180deg, #000000 0%, #5e667200 100%) 0%
     0% no-repeat padding-box;
 }
 body {
