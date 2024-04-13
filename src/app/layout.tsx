@@ -9,10 +9,11 @@ import FloatButton from "@/components/floatButton";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// export const metadata: Metadata = {
-//   title: "Neptune Lab",
-//   description: "Consultoria e desenvolvimento digital.",
-// };
+export const metadata: Metadata = {
+  title: "Neptune Lab",
+  description:
+    "Neptune Lab é especializada no desenvolvimento de aplicativos, sistemas customizados, sites, plataformas de e-commerce e dashboards interativos. Descubra como nossas soluções tecnológicas personalizadas podem transformar sua operação digital e otimizar seus processos de negócio. Conecte-se com as soluções ideais para crescer seu negocio com um ambiente digital moderno.",
+};
 
 export default function RootLayout({
   children,
@@ -21,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt" className="scroll-smooth">
-      <Head>
+      <head>
         <title>Neptune Lab</title>
         <meta
           name="description"
@@ -38,7 +39,7 @@ export default function RootLayout({
         />
         <meta property="og:image" content="/images/favicon.ico" />
         <GoogleTagManager gtmId="GTM-M3R82KK5" />
-      </Head>
+      </head>
       <body className={inter.className}>
         <Header />
         {children}
