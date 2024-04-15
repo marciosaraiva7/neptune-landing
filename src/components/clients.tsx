@@ -5,7 +5,12 @@ export default function Clients() {
   return (
     <div className="w-full bg-white ">
       <div className="flex w-full flex-col items-center justify-center gap-16 pt-[9.563rem]">
-        <div className="flex flex-col items-center justify-center gap-8 md:flex-row">
+        <div className=" flex w-full justify-start px-[7.563rem]">
+          <p className="text-right text-[1.25rem] font-bold leading-[1.813rem] tracking-[-0.023rem] text-black md:text-[2.25rem] md:leading-[3.313rem]">
+            Empresas parceiras
+          </p>
+        </div>
+        <div className="flex flex-col items-center justify-center gap-8 md:flex-row ">
           <Link href={"https://dinamicainventarios.com.br/"}>
             <img
               src="/images/logo-dinamica.webp"
@@ -27,7 +32,7 @@ export default function Clients() {
             className="w-[15rem]"
           />
         </div>
-        <div className="flex flex-col items-center justify-center gap-16 md:flex-row">
+        <div className="mb-[5.563rem] flex flex-col items-center justify-center gap-16 md:flex-row">
           <Link href={"https://www.1sti.com.br/"}>
             <img
               src="/images/1sti-logo.svg"
@@ -40,11 +45,6 @@ export default function Clients() {
             alt="Luhmin logo"
             className="w-[12rem]"
           />
-        </div>
-        <div className="mb-[5.563rem] flex w-full justify-end pr-[7.563rem]">
-          <p className="text-right text-[1.25rem] font-bold leading-[1.813rem] tracking-[-0.023rem] text-black md:text-[2.25rem] md:leading-[3.313rem]">
-            Empresas parceiras
-          </p>
         </div>
       </div>
     </div>

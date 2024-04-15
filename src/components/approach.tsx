@@ -10,8 +10,8 @@ export default function Approuch() {
       id="approach"
       className="z-[2] flex w-full flex-col bg-black pb-[3.125rem] md:items-center md:justify-center"
     >
-      <div className="flex w-full pb-[3.688rem] pt-[3rem] md:mr-[8.688rem] md:justify-end">
-        <p className="w-[90%] text-center text-[2.375rem] font-bold leading-[3.313rem] text-white md:w-[45rem] md:text-right md:text-[3.75rem] md:leading-[3.313rem]">
+      <div className="flex w-full pb-[3.688rem] pt-[5rem] md:mr-[8.688rem] md:justify-center">
+        <p className="mb-[2rem] w-[90%] text-center text-[2.375rem] font-bold leading-[3.313rem] text-white md:w-[45rem] md:text-right md:text-[3.75rem] md:leading-[3.313rem]">
           Nossos serviços
         </p>
       </div>
