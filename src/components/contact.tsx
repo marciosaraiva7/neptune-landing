@@ -139,6 +139,7 @@ export default function Contact() {
                     </p>
                     <InputMask
                       ref={telInputRef}
+                      type="tel"
                       mask="99 9 9999-9999"
                       value={tel}
                       onChange={(e) => setTel(e.target.value)}

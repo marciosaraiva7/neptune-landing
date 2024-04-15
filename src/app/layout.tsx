@@ -40,6 +40,15 @@ export default function RootLayout({
         <meta property="og:image" content="/images/favicon.ico" />
         <GoogleTagManager gtmId="GTM-M3R82KK5" />
       </head>
+
+      <script
+        type="text/javascript"
+        id="hs-script-loader"
+        async
+        defer
+        src="//js.hs-scripts.com/45878445.js"
+      ></script>
+
       <body className={inter.className}>
         <Header />
         {children}
